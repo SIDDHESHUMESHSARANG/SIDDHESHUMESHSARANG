@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Java script, React Native, Python and Linux(Ubuntu) at Smt.CHM college**
 
-- 👨‍💻 All of my projects are available at [on my repos](on my repos)
+- 👨‍💻 All of my projects are available **on my repos**
 
 - 💬 Ask me about **Web Development**
 
