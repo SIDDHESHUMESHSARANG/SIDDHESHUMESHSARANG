@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhesh Sarang - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+          <span>Siddhesh Sarang</span><span class="diff">.Portfolio</span>
+
+        </h1>
+        <p>Web Developer | Tech Enthusiast | Lifelong Learner</p>
+        <nav>
+            <button data-section="about">About Me</button>
+            <button data-section="resume">Resume</button>
+            <button data-section="projects">Projects</button>
+            <button data-section="contact">Contact</button>
+        </nav>
+
+
+    </header>
+
+    <section id="about" class="content-section">
+        <h2>Hello!</h2>
+        <p>I'm Siddhesh Umesh Sarang, a dedicated computer science student passionate about coding, web development, and building impactful tech projects. Skilled in HTML, CSS, JavaScript, and exploring React Native, I'm committed to continuous learning and open to opportunities to grow in the tech industry. With a solid foundation in programming and problem-solving, I strive to create meaningful, user-focused applications. My portfolio showcases my technical abilities and innovative approach, reflecting a commitment to both personal growth and industry impact.</p>
+    </section>
+
+    <section id="projects" class="content-section" style="display: none;">
+        <h2>Projects</h2>
+        <div class="project">
+            <img alt="Made using JCross" src="project1.png">
+            <h3><a href="https://siddheshumeshsarang.github.io/crossword/">CSS Crossword Project</a></h3>
+            <p>A crossword project demonstrating my CSS skills.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section" style="display: none;">
+        <h2>Contact</h2>
+        <form class="cont" action="connect.php" method="post">
+        <p>Enter your Name</p>
+        <input class="username" type="text" placeholder="your name">
+        <p class="usermail">Your Email</p>
+        <input type="text" placeholder="eg: abc123@gmail.com">
+        <p class="mssg">Your Message</p>
+        <input class="msg" type="text" placeholder="type something">
+    
+
+        </form>
+        <button class="sub">Submit</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<section id="resume" class="content-section">
+    <div class="flowchart-resume">
+        <div class="section personal-info">
+            <h2 class="PI">Personal Information</h2>
+            <p id="left">⚬ Name: Siddhesh Sarang</p>
+            <p id="left">⚬ Location: Ambernath, Thane</p>
+            <p id="left">⚬ Email: siddheshsarang0811@gmail.com</p>
+            <p id="left">⚬ Phone: +91 9011107146</p>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="section education">
+            <h2>Education</h2>
+            <p>⚬ SSC from S.I.C.E.S English High School</p>
+            <p>⚬ HSC from KV Pendharkar Junior College of Science</p>
+            <p>⚬ BSc in Computer Science(Pursuing) - Smt.CHM College, Maharashtra</p>
+            <p>⚬ MSCIT Certification (MKCL)</p>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="section skills">
+            <h2 class="ski">Skills</h2>
+            <ul>
+                <li>⚬ HTML, CSS, JavaScript, React Native</li>
+                <li>⚬ MySQL, PostgreSQL (learning)</li>
+                <li>⚬ Basic PhpMyAdmin, XAMPP</li>
+                <li>⚬ Linux, Git, GitHub</li>
+                <li>⚬ MS Office(365)</li>
+            </ul>
+        </div>
+</section>
