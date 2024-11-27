@@ -18,7 +18,7 @@ header {
   background-color: hsl(0, 0%, 0%);
   color: #fff;
   padding: 20px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
 }
