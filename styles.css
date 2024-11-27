@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
   color: hsl(0, 0%, 11%);
   text-align: center;
-  background-color: #f4f4f9;
+  background-color: black;
 }
 
 /* Header styles */
@@ -71,7 +71,7 @@ section:target {
 
 /* About Section */
 #about {
-  background-color:transparent;
+  background-color: darkslategrey;
   border-radius: 10px;
   padding: 60px;
   max-width: 1000px;
