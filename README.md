@@ -3,7 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=siddheshumeshsarang&label=Profile%20views&color=0e75b6&style=flat" alt="siddheshumeshsarang" /> </p>
 
-[Visit My Portfolio](https://siddheshumeshsarang.github.io/SIDDHESHUMESHSARANG/)
 
 - 🌱 I’m currently learning **Java script, React Native, Python and Linux(Ubuntu) by self** and also pursuing Bsc CS at Smt.CHM college
 
