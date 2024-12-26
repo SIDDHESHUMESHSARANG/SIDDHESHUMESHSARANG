@@ -1,6 +1,7 @@
 [![](https://visitcount.itsvg.in/api?id=SIDDHESHUMESHSARANG&icon=1&color=11)](https://visitcount.itsvg.in)
 # 💫 About Me:
-A passionate developer from India<br><br>🌱 I’m currently learning Java script, React Native, Python and Linux(Ubuntu) by self and also pursuing Bsc CS at Smt.CHM college<br><br>👨‍💻 All of my projects are available on my repos<br><br>💬 Ask me about ~ Web Development<br><br>📫 How to reach me : sidd81106@gmail.com<br><br>⚡ Fun fact: I'm a huge F1 and Football fan
+A passionate developer from India<br><br>🌱 I’m currently learning Java script, ReactJS,
+Python and Linux(Ubuntu) by self and also pursuing Bsc CS at Smt.CHM college<br><br>👨‍💻 All of my projects are available on my repos<br><br>💬 Ask me about ~ Web Development<br><br>📫 How to reach me : sidd81106@gmail.com<br><br>⚡ Fun fact: I'm a huge F1 and Football fan
 
 
 ## 🌐 Socials:
