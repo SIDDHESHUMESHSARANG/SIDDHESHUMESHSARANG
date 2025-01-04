@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddhesh Sarang</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .navbar h1 {
+        font-size: 1.2rem;
+        color: #181818;
+        font-weight: bold;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        display: none;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .navbar a:hover {
+        color: #007bff;
+      }
+
+      .navbar a:focus {
+        outline: none;
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 20px 30px;
+        }
+
+        .navbar h1 {
+          font-size: 1.2rem;
+        }
+
+        .navbar ul {
+          flex-direction: column;
+          gap: 10px;
+          display: none; /* Initially hidden for mobile */
+          background-color: rgba(255, 255, 255, 0.9);
+          position: absolute;
+          top: 50px;
+          right: 10px;
+          width: 150px;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+
+        .navbar ul.active {
+          display: flex;
+        }
+
+        .navbar .menu-toggle {
+          display: block;
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+      }
+
+      /* Section Styles */
+      section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+      }
+
+      #home {
+        background: #fff;
+        color: #181818;
+      }
+
+      #home h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      #home p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
+      #about {
+        background-color: #e3f2fd;
+      }
+
+      #skills {
+        background-color: #e8f5e9;
+      }
+
+      #contact {
+        background-color: #fff3e0;
+      }
+
+      section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #181818;
+      }
+
+      section p,
+      ul {
+        font-size: 1.2rem;
+        max-width: 800px;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 20px 0;
+      }
+
+      ul li {
+        background: white;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      ul li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      #para {
+        text-align: left;
+      }
+
+      /* Mobile Specific Styles */
+      @media (max-width: 768px) {
+        section h2 {
+          font-size: 2rem;
+        }
+
+        section p,
+        ul li {
+          font-size: 1rem;
+        }
+
+        #home h1 {
+          font-size: 2.5rem;
+        }
+
+        #home p {
+          font-size: 1.2rem;
+        }
+
+        /* Skills section */
+        ul {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        }
+
+        .navbar h1 {
+          font-size: 1rem;
+        }
+
+        /* Reduce skill font size on mobile */
+        ul li {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>SIDDHESH UMESH SARANG</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Tech Stack">Tech Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Hi, I'm Siddhesh</h1>
+      <p>An aspiring web dev</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p id="para">
+        I'm Siddhesh Sarang, a BSc Computer Science student with a passion for
+        technology and software development. I specialize in web development,
+        with skills in HTML, CSS, JavaScript, MySQL, and ReactJS. My focus is on
+        creating efficient, user-friendly applications and solving real-world
+        problems with technology. I'm always looking to learn and grow, staying
+        updated with the latest trends in the tech world. With a collaborative
+        mindset, I enjoy working with others to build innovative solutions. In
+        the future, I plan to pursue a Masters in Computer Science to further
+        enhance my knowledge and skills.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+        <li>Python</li>
+        <li>Ubuntu</li>
+        <li>React JS</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>MAIL : siddheshsarang0811@gmail.com</p>
+      <br />
+      <p>Phn : +91 9011107146</p>
+      <br />
+      <p>Let's connect and build something amazing together!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 Siddhesh Sarang. All rights reserved.</footer>
+  </body>
+</html>
