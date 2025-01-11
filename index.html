@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Siddhesh Sarang</title>
+    <link rel="icon" href="s8.png" />
     <style>
       /* Global Styles */
       * {
@@ -210,6 +211,61 @@
           font-size: 1rem;
         }
       }
+
+      #projects {
+        background: #f8e1d4;
+      }
+
+      .prjs {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+      }
+
+      img {
+        box-sizing: border-box;
+        width: 190px;
+        height: 190px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .name {
+        font-size: 20px;
+        font-weight: 100;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      @media (max-width: 768px) {
+        .prjs {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        img {
+          box-sizing: border-box;
+          width: 100px;
+          height: 100px;
+          border: 2px solid #ccc;
+          border-radius: 20px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        #projects {
+          padding-bottom: 290px;
+        }
+
+        .prjtit {
+          padding-top: 350px;
+          padding-bottom: 20px;
+        }
+
+        .name {
+          font-size: 15px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -260,6 +316,38 @@
       </ul>
     </section>
 
+    <section id="projects">
+      <h2 class="prjtit">Projects</h2>
+      <ul class="prjs">
+        <div class="prj1">
+          <div class="trfblk">
+            <a href="https://racing-div.vercel.app/">
+              <img src="code.png" alt="Click to visit" />
+            </a>
+            <h2 class="name">Traffic Blocks</h2>
+          </div>
+        </div>
+
+        <div class="prj2">
+          <div class="crosswd">
+            <a href="https://siddheshumeshsarang.github.io/crossword/">
+              <img src="crossword.jpg" alt="Click to visit" />
+            </a>
+            <h2 class="name">EOH Crossword</h2>
+          </div>
+        </div>
+
+        <div class="prj3">
+          <div class="clk">
+            <a href="https://digital-clock-by-sid.vercel.app/">
+              <img src="vector-clock.png" alt="Click to visit" />
+            </a>
+            <h2 class="name">Digital Clock</h2>
+          </div>
+        </div>
+      </ul>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
@@ -270,7 +358,40 @@
       <p>Let's connect and build something amazing together!</p>
     </section>
 
-    <!-- Footer -->
-    <footer>&copy; 2025 Siddhesh Sarang. All rights reserved.</footer>
+    <script>
+      // Disable Right-Click (Context Menu)
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      // Prevent F12, Ctrl+Shift+I, Ctrl+Shift+U to open DevTools
+      document.onkeydown = function (e) {
+        if (
+          e.key === "F12" ||
+          (e.ctrlKey && ((e.shiftKey && e.key === "I") || e.key === "U"))
+        ) {
+          e.preventDefault();
+        }
+      };
+
+      // Detect Developer Tools Open
+      (function () {
+        const devtools = /./;
+        devtools.toString = function () {
+          this.opened = true;
+        };
+
+        setInterval(function () {
+          if (devtools.opened) {
+            alert("Developer tools are opened. Please close them.");
+          }
+        }, 1000);
+      })();
+
+      // Override Console Methods to Prevent Logging
+      console.log = function () {};
+      console.warn = function () {};
+      console.error = function () {};
+    </script>
   </body>
 </html>
