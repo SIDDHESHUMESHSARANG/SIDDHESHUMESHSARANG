@@ -14,7 +14,7 @@ Python and Linux(Ubuntu) by self and also pursuing Bsc CS at Smt.CHM college<br>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
-## 🏆 GitHub Trophies
+
 ![](https://github-profile-trophy.vercel.app/?username=SIDDHESHUMESHSARANG&theme=radical&no-frame=true&no-bg=false&margin-w=4)
 
 ### ✍️ Random Dev Quote
