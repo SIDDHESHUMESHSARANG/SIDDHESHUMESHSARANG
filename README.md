@@ -3,8 +3,10 @@
 A passionate developer from India<br><br>🌱 I’m currently learning Java script, ReactJS,
 Python and Linux(Ubuntu) by self and also pursuing Bsc CS at Smt.CHM college<br><br>👨‍💻 All of my projects are available on my repos<br><br>💬 Ask me about ~ Web Development<br><br>📫 How to reach me : sidd81106@gmail.com<br><br>⚡ Fun fact: I'm a huge F1 and Football fan
 
+
 # My portfolio:
-![Portfolio](siddheshumeshsarang.vercel.app)
+!(https://siddheshumeshsarang.github.io/SIDDHESHUMESHSARANG/)
+
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/iamsid08 ) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/siddhesh-sarang-3a060a2a2 ) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/iamsid08_) 
