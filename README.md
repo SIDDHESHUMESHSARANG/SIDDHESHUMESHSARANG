@@ -5,7 +5,7 @@ Python and Linux(Ubuntu) by self and also pursuing Bsc CS at Smt.CHM college<br>
 
 
 # My portfolio:
-![Siddhesh Sarang](https://siddheshumeshsarang.vercel.app)
+[Siddhesh Sarang](https://siddheshumeshsarang.vercel.app)
 
 
 ## 🌐 Socials:
