@@ -16,8 +16,8 @@
 
       body {
         font-family: "Poppins", sans-serif;
-        background-color: #f7f7f7;
-        color: #333;
+        background-color: #181818;
+        color: #fff;
         scroll-behavior: smooth;
         overflow-x: hidden;
       }
@@ -31,15 +31,16 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px 60px;
-        background: rgba(255, 255, 255, 0.8);
+        background: #181818;
+
         backdrop-filter: blur(10px);
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 12px 12px 100px #000;
         z-index: 1000;
       }
 
       .navbar h1 {
         font-size: 1.2rem;
-        color: #181818;
+        color: #fff;
         font-weight: bold;
       }
 
@@ -102,6 +103,8 @@
 
       /* Section Styles */
       section {
+        background: #181818;
+        color: #fff;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -112,8 +115,7 @@
       }
 
       #home {
-        background: #fff;
-        color: #181818;
+        color: #fff;
       }
 
       #home h1 {
@@ -127,21 +129,44 @@
       }
 
       #about {
-        background-color: #e3f2fd;
+        background-color: #181818;
+        animation: appear linear;
+        animation-timeline: view();
       }
 
       #skills {
-        background-color: #e8f5e9;
+        background-color: #181818;
+        animation: appear linear;
+        animation-timeline: view();
       }
 
       #contact {
-        background-color: #fff3e0;
+        background-color: #181818;
+        animation: appear linear;
+        animation-timeline: view();
       }
+
+      @keyframes appear {
+        from {
+          opacity: 1;
+          transform: scale(0.8); 
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .animated-element {
+        backface-visibility: hidden;
+      }
+
+
 
       section h2 {
         font-size: 2.5rem;
         margin-bottom: 20px;
-        color: #181818;
+        color: #fff;
       }
 
       section p,
@@ -161,9 +186,9 @@
       }
 
       ul li {
-        background: white;
+        background: #181818;
         padding: 10px 15px;
-        border: 1px solid #ddd;
+        border: 1px solid #181818;
         border-radius: 8px;
         text-align: center;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -172,7 +197,7 @@
 
       ul li:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 100px #000;
       }
 
       #para {
@@ -214,7 +239,9 @@
       }
 
       #projects {
-        background: #f8e1d4;
+        background: #181818;
+        animation: appear linear;
+        animation-timeline: view();
       }
 
       .prjs {
@@ -229,13 +256,13 @@
         height: 190px;
         border: 2px solid #ccc;
         border-radius: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 100px #000;
       }
 
       .name {
         font-size: 20px;
         font-weight: 100;
-        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        text-shadow: 0 2px 100px #000;
       }
 
       #color1{
@@ -294,8 +321,26 @@
 
       .fa-linkedin-in{
         margin-left: 30px;
+        color: #fff;
       }
 
+      .fa-linkedin-in:hover{
+        color: blue;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .fa-github{
+        color: #fff;
+      }
+
+      .fa-github:hover{
+        color: blue;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .ttt{
+        margin-top: 100px;
+      }
       @media (max-width: 768px) {
 
         .fa-linkedin-in, .fa-github{
@@ -304,8 +349,12 @@
 
         .prjs {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           gap: 10px;
+        }
+
+        .ttt{
+          margin-top: 50px;
         }
 
         img {
@@ -367,7 +416,7 @@
     <!-- Home Section -->
     <section id="home">
       <h1>Hi, I'm Siddhesh</h1>
-      <p>An aspiring web dev</p>
+      <p style="color: #ccc;">An aspiring web dev</p>
     </section>
 
     <!-- About Section -->
@@ -433,6 +482,15 @@
             </a>
             <h2 class="name">Digital Clock</h2>
           </div>
+
+        <div class="prj4">
+          <div class="ttt">
+            <a href="https://tictactoe8.vercel.app/">
+              <img src="tic-tac-toe.png" alt="">
+            </a>
+            <h2 class="name">TicTacToe</h2>
+          </div>
+        </div>
         </div>
       </ul>
     </section>
@@ -446,6 +504,19 @@
     </section>
 
     <script>
+      let count = 1;
+      const button = document.querySelector("#theme");
+      const switchh = document.querySelector("#theme");
+      const header = document.querySelector("#theme");
+
+button.addEventListener("click", () => {
+  count++;
+});
+
+switchh.addEventListener("click", () => {
+  document.body.style.background = count % 2 !== 0 ? "#181818" : "#fff";
+});
+
       // Disable Right-Click (Context Menu)
       document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
