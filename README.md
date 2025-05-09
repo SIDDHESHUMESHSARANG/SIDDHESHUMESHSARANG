@@ -2,7 +2,12 @@
 # 💫 About Me:
 A passionate developer from India<br><br>
 Currently exploring Computer Science and Development Fundamentals <br><br>👨‍💻 
-All of my projects are available on my repos<br><br>💬 Ask me about ~ Web Development<br><br>📫 How to reach me : sidd81106@gmail.com<br><br>⚡ Fun fact: I'm a huge F1 and Football fan
+All of my projects are available on my repos<br><br>💬 Ask me about<br>
+- Software Development<br>
+- Web Development<br>
+- Databases<br>
+- Machine learning
+<br><br>📫 How to reach me : sidd81106@gmail.com<br><br>⚡ Fun fact: I'm a huge F1 and Football fan
 
 
 # My Personal site:
