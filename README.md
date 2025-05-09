@@ -8,7 +8,7 @@ All of my projects are available on my repos<br><br>💬 Ask me about<br>
 - Databases<br>
 - Machine learning<br><br>
 
-📫 How to reach me : siddheshsarang0811@gmail.com<br><br>⚡ Fun fact: Bread tastes better than key 
+📫 How to reach me : siddheshsarang0811@gmail.com<br><br>⚡ Fun fact: `Bread tastes better than key`
 
 
 # My Personal site:
