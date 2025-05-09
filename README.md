@@ -8,7 +8,7 @@ All of my projects are available on my repos<br><br>💬 Ask me about<br>
 - Databases<br>
 - Machine learning<br><br>
 
-📫 How to reach me : siddheshsarang0811@gmail.com<br><br>⚡ Fun fact: `The first recorded computer bug was a moth found in the Harvard Mark II in 1947`
+📫 How to reach me : siddheshsarang0811@gmail.com<br><br>⚡ Fun fact: The first recorded computer bug was a moth found in the Harvard Mark II in 1947
 
 
 # My Personal site:
