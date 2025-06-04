@@ -1,13 +1,13 @@
-### Hi there, I'm Siddhesh! <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="30" />
+### Hi there, I'm Siddhesh! <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="30" /> <br/><br/>
 
 
-### 🌟 About Me
+### <img src="https://emojis.slackmojis.com/emojis/images/1643514389/3643/cool-doge.gif" width="30" /> About Me
 
-💻 Passionate computer science student <br/>
-🧠 Currently exploring the vast world of **Computer Science** & **Development Fundamentals**  
-🛠️ Building things that solve problems and spark curiosity  
-📂 Check out my projects right here on GitHub  
-💬 I love chatting about:
+~ Passionate computer science student <br/>
+~ Currently exploring the vast world of **Computer Science** & **Development Fundamentals** <br/>
+~ Building things that solve problems and spark curiosity  
+~ Check out my projects right here on GitHub  
+~ I love chatting about:
 - Software & Web Development  
 - Databases & Backend  
 - Machine Learning & AI  
@@ -17,7 +17,7 @@
 
 
 
-### 🌐 Connect With Me
+### <img src="https://emojis.slackmojis.com/emojis/images/1643515208/12261/earth-globe.gif?1643515208" width="25"/> Connect With Me
 
 <p align="left">
   <a href="https://instagram.com/iamsid08"><img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
@@ -27,12 +27,12 @@
 
 
 
-### 🧑‍💻 My Portfolio
+### <img src="https://emojis.slackmojis.com/emojis/images/1699659569/74744/huh.gif?1699659569" width="25"/> My Portfolio
 
 🌐 [**siddheshumeshsarang.vercel.app**](https://siddheshumeshsarang.vercel.app)
 
 
-### 🛠️ Tech Stack
+### <img src="https://emojis.slackmojis.com/emojis/images/1643514620/6248/dumpster-fire.gif?1643514620" width="25"/> Tech Stack
 
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
@@ -46,7 +46,7 @@
 
 
 
-### 📊 GitHub Stats
+### <img src="https://emojis.slackmojis.com/emojis/images/1737491105/111860/ronaldo-siu.gif?1737491105" width="25"/> GitHub Stats
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" />
@@ -56,7 +56,7 @@
 
 
 
-### 🏆 GitHub Trophies
+### <img src="https://emojis.slackmojis.com/emojis/images/1694915491/69089/pizza-trophy.png?1694915491" width="25"/> GitHub Trophies
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=SIDDHESHUMESHSARANG&theme=radical&no-frame=true&no-bg=false&margin-w=8" />
