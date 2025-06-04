@@ -32,7 +32,7 @@
 🌐 [**siddheshumeshsarang.vercel.app**](https://siddheshumeshsarang.vercel.app)
 
 
-### <img src="https://emojis.slackmojis.com/emojis/images/1643514620/6248/dumpster-fire.gif?1643514620" width="25"/> Tech Stack
+### <img src="https://emojis.slackmojis.com/emojis/images/1643514620/6248/dumpster-fire.gif?1643514620" width="30"/> Tech Stack
 
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
