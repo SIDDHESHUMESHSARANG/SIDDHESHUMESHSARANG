@@ -46,7 +46,7 @@
 
 
 
-### <img src="https://emojis.slackmojis.com/emojis/images/1737491105/111860/ronaldo-siu.gif?1737491105" width="25"/> GitHub Stats
+### <img src="https://emojis.slackmojis.com/emojis/images/1643514843/8559/this_is_fine.gif?1643514843" width="25"/> GitHub Stats
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" />
