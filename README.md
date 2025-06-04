@@ -63,7 +63,7 @@
 </p>
 
 
-### 💬 Dev Quote
+### <img src="https://emojis.slackmojis.com/emojis/images/1643515270/12920/air_quotes.gif?1643515270" width="25"/> Dev Quote
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=vertical&theme=merko" />
