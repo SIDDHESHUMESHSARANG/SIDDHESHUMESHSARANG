@@ -3,10 +3,14 @@
 
 ### <img src="https://emojis.slackmojis.com/emojis/images/1643514389/3643/cool-doge.gif" width="30" /> About Me
 
-~ Passionate computer science student <br/>
-~ Currently exploring the vast world of **Computer Science** & **Development Fundamentals** <br/>
-~ Building things that solve problems and spark curiosity  
+~ Passionate computer science student
+
+~ Currently exploring the vast world of **Computer Science** & **Development Fundamentals**
+
+~ Building things that solve problems and spark curiosity 
+
 ~ Check out my projects right here on GitHub  
+
 ~ I love chatting about:
 - Software & Web Development  
 - Databases & Backend  
