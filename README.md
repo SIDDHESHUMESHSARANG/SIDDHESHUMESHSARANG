@@ -1,6 +1,5 @@
 ### Hi there, I'm Siddhesh! <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="30" /> <br/><br/>
 
-
 ### <img src="https://emojis.slackmojis.com/emojis/images/1643514389/3643/cool-doge.gif" width="30" /> About Me
 
 ~ Passionate computer science student
@@ -21,7 +20,7 @@
 
 ***
 
-### <img src="https://emojis.slackmojis.com/emojis/images/1643515208/12261/earth-globe.gif?1643515208" width="25"/> Connect With Me
+### 🌍 Connect With Me
 
 <p align="left">
   <a href="https://instagram.com/iamsid08"><img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
@@ -31,27 +30,28 @@
 
 ***
 
-### <img src="https://emojis.slackmojis.com/emojis/images/1699659569/74744/huh.gif?1699659569" width="30"/> My Portfolio
+### 🤔 My Portfolio
 
 🌐 [**siddheshumeshsarang.vercel.app**](https://siddheshumeshsarang.vercel.app)
 
 ***
 
-### <img src="https://emojis.slackmojis.com/emojis/images/1643514620/6248/dumpster-fire.gif?1643514620" width="30"/> Tech Stack
+### 🔥 Tech Stack
 
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
   <img src="https://img.shields.io/badge/React-%2320232a?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34" />
   <img src="https://img.shields.io/badge/Vercel-%23000000?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-%2300599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-%23F05033?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-%230db7ed?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/C++-%2300599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 </p>
 
 ***
 
-### <img src="https://emojis.slackmojis.com/emojis/images/1643514843/8559/this_is_fine.gif?1643514843" width="30"/> GitHub Stats
+### 📊 GitHub Stats
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" />
@@ -69,7 +69,7 @@
 
 ***
 
-### <img src="https://emojis.slackmojis.com/emojis/images/1643515270/12920/air_quotes.gif?1643515270" width="30"/> Dev Quote
+### ✍️ Dev Quote
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=vertical&theme=merko" />
