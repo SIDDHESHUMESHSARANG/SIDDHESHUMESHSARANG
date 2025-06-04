@@ -19,7 +19,7 @@
 📫 Reach me at: **siddheshsarang0811@gmail.com**  
 🪲 *Fun fact:* The first computer bug was an actual moth found in the Harvard Mark II in 1947.
 
-
+***
 
 ### <img src="https://emojis.slackmojis.com/emojis/images/1643515208/12261/earth-globe.gif?1643515208" width="25"/> Connect With Me
 
@@ -29,12 +29,13 @@
   <a href="https://x.com/iamsid08_"><img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=X&logoColor=white" /></a>
 </p>
 
-
+***
 
 ### <img src="https://emojis.slackmojis.com/emojis/images/1699659569/74744/huh.gif?1699659569" width="30"/> My Portfolio
 
 🌐 [**siddheshumeshsarang.vercel.app**](https://siddheshumeshsarang.vercel.app)
 
+***
 
 ### <img src="https://emojis.slackmojis.com/emojis/images/1643514620/6248/dumpster-fire.gif?1643514620" width="30"/> Tech Stack
 
@@ -48,7 +49,7 @@
   <img src="https://img.shields.io/badge/Docker-%230db7ed?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
-
+***
 
 ### <img src="https://emojis.slackmojis.com/emojis/images/1643514843/8559/this_is_fine.gif?1643514843" width="30"/> GitHub Stats
 
@@ -58,7 +59,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&layout=compact" />
 </p>
 
-
+***
 
 ### <img src="https://emojis.slackmojis.com/emojis/images/1694915491/69089/pizza-trophy.png?1694915491" width="30"/> GitHub Trophies
 
@@ -66,6 +67,7 @@
   <img src="https://github-profile-trophy.vercel.app/?username=SIDDHESHUMESHSARANG&theme=radical&no-frame=true&no-bg=false&margin-w=8" />
 </p>
 
+***
 
 ### <img src="https://emojis.slackmojis.com/emojis/images/1643515270/12920/air_quotes.gif?1643515270" width="30"/> Dev Quote
 
