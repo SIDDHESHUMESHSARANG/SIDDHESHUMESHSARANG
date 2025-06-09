@@ -15,8 +15,8 @@
 - Databases & Backend  
 - Machine Learning & AI  
 
-📫 Reach me at: **siddheshsarang0811@gmail.com**  
-🪲 *Fun fact:* The first computer bug was an actual moth found in the Harvard Mark II in 1947.
+
+🪲 *Fun fact :* The first computer bug was an actual moth found in the Harvard Mark II in 1947.
 
 ***
 
