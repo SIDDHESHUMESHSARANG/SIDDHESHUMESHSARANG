@@ -11,7 +11,7 @@
 ~ Check out my projects right here on GitHub  
 
 ~ I love chatting about:
-- Software & Web Development  
+- Web Development  
 - Databases & Backend  
 - Machine Learning & AI  
 
