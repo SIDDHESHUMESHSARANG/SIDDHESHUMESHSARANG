@@ -1,0 +1,70 @@
+#Hi-statement {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    margin-left: 70px;
+    padding-bottom: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#typewriter-text {
+    display: inline-block;
+    animation: typing 1s steps(44) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: none;
+}
+
+#name-body {
+    background: linear-gradient(45deg, #8a2be2, #4b0082);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+#cursor {
+    margin-left: 2px;
+    animation: blink 1s step-start infinite;
+}
+
+#text {
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    margin-left: 90px;
+    animation: fade 1s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blink {
+    50% {
+        visibility: hidden;
+    }
+}
+
+/* Typewriter animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14.9ch;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

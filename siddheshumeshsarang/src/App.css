@@ -1,0 +1,45 @@
+@import url(../src/components/body/Body.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, #181818, #000, #fff 150%);
+}
+
+section {
+    margin-bottom: 100px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    /* Prevent section overflow */
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+#home {
+    padding-top: 80px;
+    margin-bottom: 0;
+}
+
+#projects {
+    padding-top: 10px;
+    margin-top: -200px;
+}
+
+#creations {
+    opacity: 0;
+    animation: fade 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
