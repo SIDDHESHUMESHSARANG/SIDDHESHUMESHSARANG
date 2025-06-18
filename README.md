@@ -1,6 +1,6 @@
 ### Hi there, I'm Siddhesh! <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="30" /> <br/><br/>
 
-### About Me
+### ⓘ About Me
 
 ~ Passionate computer science student
 
