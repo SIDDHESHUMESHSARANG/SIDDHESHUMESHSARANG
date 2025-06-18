@@ -10,10 +10,6 @@
     gap: 20px;
     padding: 20px;
     overflow: hidden;
-    /* Prevent overflow */
-    opacity: 0;
-    animation: fade 1s ease-in-out forwards;
-    animation-delay: 2s;
 }
 
 #slider img {
@@ -28,5 +24,4 @@
 
 #slider img:hover {
     width: 50%;
-    /* Removed transform scale effect */
 }

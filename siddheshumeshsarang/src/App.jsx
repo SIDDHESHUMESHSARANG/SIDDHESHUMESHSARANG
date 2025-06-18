@@ -1,22 +1,23 @@
 import { Header } from "./components/header/Header";
 import { Body } from "./components/body/Body";
 import { Slider } from "./components/project-slider/Slider";
-import { Suspense } from "react";
+import { ScrollFadeIn } from "./components/ScrollFadeIn/ScrollFadeIn";
 import "./App.css"
 
 export default function App() {
     return (
         <>
-            <Header />
+                <Header />
             <section id="home">
                 <Body />
             </section>
-            <h2 id="creations" style={{marginLeft: "620px"}}>Creations</h2><br /><br />
-            <section id="projects">
-                <Suspense fallback="loading...">
+            
+            <ScrollFadeIn threshold={0.3} delay={200}>
+                <section id="projects" style={{marginLeft: "50px"}}>
+                    <h2 id="creations" style={{marginLeft: "640px"}}>Creations</h2>
                     <Slider />
-                </Suspense>
-            </section>
+                </section>
+            </ScrollFadeIn>
         </>
     )
 }
