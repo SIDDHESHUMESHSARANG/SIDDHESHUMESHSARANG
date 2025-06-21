@@ -5,11 +5,13 @@ import crossword from "../../assets/crossword.png"
 export function Slider() {
     return(
         <>
-        <div id="slider">
-        <img loading='lazy' src={sweeper} alt="" id="sweeper"/>
-        <img loading='lazy' src={trafficBlocks} alt="" id="trafficblocks"/>
-        <img loading='lazy' src={crossword} alt="" id="crossword"/>
-        </div>
+            <a href="https://linktr.ee/siddheshsarang?utm_source=linktree_admin_share" target="_blank" rel="noreferrer" className="slider-link">
+                <div id="slider">
+                    <img loading='lazy' src={sweeper} alt="" id="sweeper" />
+                    <img loading='lazy' src={trafficBlocks} alt="" id="trafficblocks" />
+                    <img loading='lazy' src={crossword} alt="" id="crossword" />
+                </div>
+            </a>
         </>
     )
 }
