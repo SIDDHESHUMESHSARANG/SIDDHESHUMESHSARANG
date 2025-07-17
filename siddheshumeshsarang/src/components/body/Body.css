@@ -1,23 +1,36 @@
 #Hi-statement {
+    position: relative;
+    z-index: 1;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     margin: 0;
     padding: 20px;
-    margin-left: 70px;
+    margin-left: 40px;
+    margin-bottom: 200px;
     padding-bottom: 0%;
     white-space: nowrap;
     overflow: hidden;
+    opacity: 0;
+    animation: fade 1s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#typewriter-wrapper {
+    display: inline;
 }
 
 #typewriter-text {
-    display: inline-block;
-    animation: typing 1s steps(44) forwards;
+    display: inline;
     white-space: nowrap;
     overflow: hidden;
     border-right: none;
+    margin-bottom: 0;
+    vertical-align: middle;
 }
 
 #name-body {
@@ -26,37 +39,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
-}
-
-#cursor {
-    margin-left: 2px;
-    animation: blink 1s step-start infinite;
+    text-shadow: none;
 }
 
 #text {
-    font-family: 'Poppins', sans-serif;
-    opacity: 0;
-    margin-left: 90px;
-    animation: fade 1s ease-in-out;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes blink {
-    50% {
-        visibility: hidden;
-    }
-}
-
-/* Typewriter animation */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 14.9ch;
-    }
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    margin-top: 0;
+    align-self: center;
+    display: inline;
 }
 
 @keyframes fade {

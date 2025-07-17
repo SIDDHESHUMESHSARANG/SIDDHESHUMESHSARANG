@@ -1,8 +1,30 @@
 html {
-  color-scheme: dark;
+  color-scheme: light dark;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+#projects:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+#projects:active {
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+#button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+#button:active {
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in-out;
 }
 
 :root {
@@ -61,16 +83,23 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #fff;
+    background-color: #121212;
   }
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000;
+    background-color: #fff;
   }
 }
 

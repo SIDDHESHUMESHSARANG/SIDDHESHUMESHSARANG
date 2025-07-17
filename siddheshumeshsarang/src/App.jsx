@@ -1,23 +1,32 @@
 import { Header } from "./components/header/Header";
 import { Body } from "./components/body/Body";
-import { Slider } from "./components/project-slider/Slider";
-import { ScrollFadeIn } from "./components/ScrollFadeIn/ScrollFadeIn";
+import { useState } from "react";
+import { useEffect } from "react";
+
 import "./App.css"
 
 export default function App() {
+    const [currentYear, setCurrentYear] = useState(null);
+    useEffect(() => {
+        const year = new Date().getFullYear();
+        setCurrentYear(year);
+    }, []);
     return (
         <>
                 <Header />
             <section id="home">
                 <Body />
             </section>
-            
-            <ScrollFadeIn threshold={0.3} delay={200}>
-                <section id="projects" style={{marginLeft: "50px"}}>
-                    <h2 id="creations" style={{marginLeft: "640px"}}>Creations</h2>
-                    <Slider />
-                </section>
-            </ScrollFadeIn>
+            <footer style={{background: "var(--footer-bg)"}}>
+               <div>
+               <p id="footer-text" style={{
+                padding: "20px 40px"
+               }}>&copy; {currentYear} <a href="https://github.com/SIDDHESHUMESHSARANG" style={{
+                color: "var(--project-text)",
+                fontWeight: "400"
+               }}>SIDDHESHUMESHSARANG</a>. All Rights Reserved</p>
+               </div>
+            </footer>
         </>
-    )
+    )   
 }
