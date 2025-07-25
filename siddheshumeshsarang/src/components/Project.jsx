@@ -9,6 +9,7 @@ export function Project({ id, title, description, link, repository, image, notDe
                 height: "360px",
                 width: "90%",
                 maxWidth: "400px",
+                border: "2px dotted #404040",
                 padding: "24px",
                 color: "#fff",
                 background: "transparent",
@@ -109,10 +110,6 @@ export function Project({ id, title, description, link, repository, image, notDe
                     Repository <RiGitRepositoryCommitsLine />
                 </a>
             </footer>
-            <br className="md:hidden" />
-            <hr style={{
-                borderTop: '1px dotted #fff'
-            }} className="md:hidden" />
         </article>
     );
 }

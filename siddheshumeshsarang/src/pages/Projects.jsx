@@ -10,7 +10,7 @@ const Projects = () => {
       <Header />
       <Navbar />
       <p className="text-2xl ml-10 mt-10">Projects</p>
-      <div className="flex flex-col md:flex-row"> {/* Apply classes directly here */}
+      <div className="flex flex-col md:flex-row mb-10"> {/* Apply classes directly here */}
         <Project
           id={'onlylinks'}
           title="OnlyLinks"
@@ -48,9 +48,6 @@ const Projects = () => {
           ]}
         />
       </div>
-      <Link to={'/blog'} className="mt-10 mb-10 flex justify-end mr-[35px] text-[20px]">
-        Next &gt;
-      </Link>
       <Footer />
     </div>
   );
