@@ -43,8 +43,7 @@ const Projects = () => {
           notDeployed={true}
           repository="https://github.com/SIDDHESHUMESHSARANG/erklaren"
           badges={[
-            "https://img.shields.io/badge/License-MIT-blue",
-            "https://img.shields.io/badge/Streamlit-1."
+            "https://img.shields.io/badge/License-MIT-blue"
           ]}
         />
       </div>

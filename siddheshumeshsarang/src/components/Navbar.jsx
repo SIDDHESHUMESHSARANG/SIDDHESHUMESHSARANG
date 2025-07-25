@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='flex gap-6 p-4'>
+            <div className='flex gap-6 p-4 md:pl-0'>
                 <Link
                     to='/'
                     className='home ml-8'
