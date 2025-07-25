@@ -27,7 +27,8 @@ const Projects = () => {
         <Project
           id={'sweeper'}
           title="Sweeper"
-          description="A VS Code extension that cleans ai-generated comments from your code."
+          description="A VS Code extension that cleans ai-generated comments from your code.
+          Supports Python and JavaScript"
           link="https://marketplace.visualstudio.com/items?itemName=SiddheshUmeshSarang.sweeper"
           repository="https://github.com/SIDDHESHUMESHSARANG/sweeper"
           badges={[
