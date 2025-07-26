@@ -1,12 +1,12 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { RiGitRepositoryCommitsLine } from "react-icons/ri";
 
-export function Project({ id, title, description, link, repository, image, notDeployed, badges = [] }) {
+export function Project({ id, title, subtitle, description, link, repository, image, notDeployed, badges = [] }) {
     return (
         <article id={`projects${id}`} className="transition-transform duration-500 ease-in-out transform hover:scale-105"
             style={{
                 margin: "20px",
-                height: "360px",
+                height: "100%",
                 width: "90%",
                 maxWidth: "400px",
                 border: "2px dotted #404040",
@@ -38,7 +38,8 @@ export function Project({ id, title, description, link, repository, image, notDe
                 flexDirection: "column",
                 justifyContent: "center"
             }}>
-                <h2 style={{ margin: "0 0 8px 10px", textAlign: "left", fontWeight: "500" }}>{title}</h2>
+                <h2 style={{ margin: "0 0 8px 10px", textAlign: "left", fontWeight: "500", fontSize: "25px" }}>{title}</h2>
+                <h6 style={{ margin: "0 0 8px 10px", textAlign: "left", fontWeight: "500", color: "yellow", fontSize: "13px" }}>{subtitle}</h6>
                 <p style={{ margin: "0 0 8px 10px", fontSize: "1rem", opacity: 0.50, textAlign: "left" }}>{description}</p>
                 {badges.length > 0 && (
                     <div style={{ margin: "0 0 8px 10px", display: "flex", gap: "6px", flexWrap: "wrap" }}>

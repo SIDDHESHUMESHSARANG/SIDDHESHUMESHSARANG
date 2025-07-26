@@ -22,7 +22,7 @@ const About = () => {
       <div>
         <p className="text-2xl ml-10 mt-10">About Me</p>
         <div
-          className={`relative overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-full" : "max-h-[250px]"}`} //,
+          className={`relative overflow-hidden transition-all duration-00 ease-in-out ${isExpanded ? "max-h-full" : "max-h-[250px]"}`} //,
           ref={contentRef}
         >
           <p className="text-[20px] p-10 text-[#505050]">
