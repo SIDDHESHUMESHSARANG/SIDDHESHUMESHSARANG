@@ -28,6 +28,6 @@ app.use('/api/posts', require('./routes/app.routes.js'));
 app.get('/', (req,res) => {
     res.send('server running!')
 })
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log('server running')
 })
