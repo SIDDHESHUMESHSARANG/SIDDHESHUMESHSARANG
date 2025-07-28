@@ -10,7 +10,7 @@ const Projects = () => {
       <Navbar />
       <p className="text-2xl ml-10 mt-10">Projects</p>
       <p className="text-[18px] text-[#505050] ml-10 mt-5">Pet-Projects</p>
-      <div className="flex flex-col md:flex-row mb-10">
+      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-4 mb-10">
         <Project
           id={'onlylinks'}
           title="OnlyLinks"
@@ -47,8 +47,25 @@ const Projects = () => {
             "https://img.shields.io/badge/License-MIT-blue"
           ]}
         />
+
+        <Project
+          id={'siddhesh/blog'}
+          title="siddhesh-blog"
+          subtitle={'integrated in this site'}
+          subtitleAccent='blue'
+          description="A Simple blog site made using React, MongoDB and Express.js"
+          link={'/blog'}
+          target={''}
+          repository="https://github.com/SIDDHESHUMESHSARANG"
+          badges={[
+            "https://img.shields.io/badge/React-19.1.0-61dafb",
+            "https://img.shields.io/badge/MongoDB-green",
+            "https://img.shields.io/badge/Express.js-5.1.0-black",
+
+          ]}
+        />
       </div>
-      <p className="text-[18px] text-[#505050] ml-10 mt-0">Academic-Projects</p>
+      <p className="text-[18px] text-[#505050] ml-10 mt-10 md:mt-20">Academic-Projects</p>
       <p className="text-[18px] text-[#ccc] ml-10 mt-5">First Year</p>
       <div>
         <Project
