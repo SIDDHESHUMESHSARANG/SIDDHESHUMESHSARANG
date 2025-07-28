@@ -15,7 +15,7 @@ const BlogPosts = () => {
   }); // Track liked posts by id
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/posts')
+    fetch(import.meta.env.VITE_BACKEND_URL)
       .then(res => res.json())
       .then(data => {
         // Sort posts by uploadedAt descending (newest first)
