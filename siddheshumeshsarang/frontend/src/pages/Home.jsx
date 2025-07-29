@@ -22,9 +22,9 @@ const Home = () => {
           <p className="text-[20px] ml-6 mt-10 mb-5">Some numbers</p>
           <div className="md:flex md:gap-8">
             <p className="ml-8 mb-2 text-[#404040] md:hidden">Github</p>
-            <img className="rounded-4xl ml-3 border border-[#404040] border-dotted" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=transparent&hide_border=true" height='350px' width='350px' /><br />
+            <img className="rounded-4xl ml-3 border border-[#404040] border-dotted" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=transparent&hide_border=true" alt="if the stats doesn't load, then it's the issue is with the stats provider not us." height='350px' width='350px' /><br />
             <p className="ml-8 mb-2 text-[#404040] md:hidden">Leetcode</p>
-            <img className="rounded-4xl ml-3 border border-[#404040] border-dotted" src="https://leetcode-badge-sage.vercel.app/badge/sid-08?theme=dark" alt="" height='350px' width='350px' />
+            <img className="rounded-4xl ml-3 border border-[#404040] border-dotted" src="https://leetcode-badge-sage.vercel.app/badge/sid-08?theme=dark" alt="if the stats doesn't load, then it's the issue is with the stats provider not us." height='350px' width='350px' />
           </div>
           <div className="hidden md:flex md:mt-5 md:gap-85">
             <p className="mb-2 text-[#404040] ml-40">Github</p>

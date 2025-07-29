@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react';
 import prelike from '/heart.png'
 import postlike from '/heart-liked.png'
 import BlogFallback from './fallbacks/BlogFallback';
+import { MdErrorOutline } from "react-icons/md";
 
 const LOCAL_STORAGE_KEY = 'likedPosts';
 
 const BlogPosts = () => {
+  const [isError, SetError] = useState(false);
+  const [errorText, SetErrorText] = useState('');
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [likedPosts, setLikedPosts] = useState(() => {
@@ -24,8 +27,10 @@ const BlogPosts = () => {
         setLoading(false);
       })
       .catch(err => {
-        console.error('Error fetching posts:', err);
         setLoading(false);
+        console.error('Error fetching posts:', err);
+        SetError(true);
+        SetErrorText('Cannot retrieve posts at this moment.')
       });
   }, []);
 
@@ -57,6 +62,16 @@ const BlogPosts = () => {
   };
 
   return (
+    <>
+      {isError && (
+        <div className='block md:inline-flex bg-[#111111] p-5 '>
+          <div className=''>
+          <MdErrorOutline size={20} color={'yellow'}/>
+          </div>&nbsp;
+          <p className='mb-4 md:mb-0'>{errorText}</p>
+          <p className='text-[16px] text-[#404040] md:ml-70'>if this issue persists, contact the developer <a className='underline underline-offset-2' href="mailto:siddheshsarang0811@gmail.com">here</a></p>
+        </div>
+      )}
     <div className='border border-dotted border-[#404040] h-auto w-auto'>
       {posts.map(post => {
         const isLiked = !!likedPosts[post._id];
@@ -94,6 +109,7 @@ const BlogPosts = () => {
         );
       })}
     </div>
+    </>
   )
 }
 
