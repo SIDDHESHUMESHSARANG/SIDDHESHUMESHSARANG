@@ -11,21 +11,6 @@ I love chatting about:
 
 ***
 
-### Connect With Me
-
-<p align="left">
-  <a href="https://instagram.com/iamsid08"><img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-  <a href="https://linkedin.com/in/siddhesh-sarang-3a060a2a2"><img src="https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://x.com/iamsid08_"><img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=X&logoColor=white" /></a>
-</p>
-
-***
-
-### My Portfolio
-
- [**siddheshumeshsarang.vercel.app**](https://siddheshumeshsarang.vercel.app)
-
-***
 
 ### GitHub Stats
 
