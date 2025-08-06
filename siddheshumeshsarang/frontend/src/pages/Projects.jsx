@@ -10,78 +10,20 @@ const Projects = () => {
       <Navbar />
       <p className="text-2xl ml-10 mt-10">Projects</p>
       <p className="text-[18px] text-[#505050] ml-10 mt-5">Pet-Projects</p>
-      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-4 mb-10">
-        <Project
-          id={'onlylinks'}
-          title="OnlyLinks"
-          description="A modern, high-quality video downloader built with React and yt-dlp. Download videos from YouTube, Instagram, Facebook, X and many other platforms with a beautiful, user-friendly interface."
-          link="https://onlyylinks.web.app"
-          repository="https://github.com/SIDDHESHUMESHSARANG/onlylinks"
-          badges={[
-            "https://img.shields.io/badge/License-MIT-blue",
-            "https://img.shields.io/badge/React-19.1.0-61dafb",
-            "https://img.shields.io/badge/FastAPI-0.104.1-009688"
-          ]}
-        />
+      <div className="m-10">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-5 md:gap-4 mb-10">
+          <Project title={'onlylinks'} link={'https://onlyylinks.web.app'}/>
+          <Project title={'sweeper'} link={'https://marketplace.visualstudio.com/items?itemName=SiddheshUmeshSarang.sweeper'} />
+          <Project title={'erklaren'} link={'https://github.com/SIDDHESHUMESHSARANG//erklaren'} />
+          <Project title={'AI-PPT'} link={'https://github.com/SIDDHESHUMESHSARANG//AI-PPT'} />
 
-        <Project
-          id={'sweeper'}
-          title="Sweeper"
-          description="A VS Code extension that cleans ai-generated comments from your code.
-          Supports Python and JavaScript"
-          link="https://marketplace.visualstudio.com/items?itemName=SiddheshUmeshSarang.sweeper"
-          repository="https://github.com/SIDDHESHUMESHSARANG/sweeper"
-          badges={[
-            "https://img.shields.io/badge/License-MIT-blue",
-            "https://img.shields.io/badge/VSCode%20Marketplace-Extension-blueviolet"
-          ]}
-        />
+        </div>
 
-        <Project
-          id={'erklaren'}
-          title="Erklaren"
-          description="A simple streamlit web app that uses Groq LLMs and Tavily search to answer user questions with up-to-date information"
-          notDeployed={true}
-          repository="https://github.com/SIDDHESHUMESHSARANG/erklaren"
-          badges={[
-            "https://img.shields.io/badge/License-MIT-blue"
-          ]}
-        />
-
-        <Project
-          id={'siddhesh/blog'}
-          title="siddhesh-blog"
-          subtitle={'integrated in this site'}
-          subtitleAccent='blue'
-          description="A Simple blog site made using React, MongoDB and Express.js"
-          link={'/blog'}
-          target={''}
-          repository="https://github.com/SIDDHESHUMESHSARANG"
-          badges={[
-            "https://img.shields.io/badge/React-19.1.0-61dafb",
-            "https://img.shields.io/badge/MongoDB-green",
-            "https://img.shields.io/badge/Express.js-5.1.0-black",
-
-          ]}
-        />
       </div>
       <p className="text-[18px] text-[#505050] ml-10 mt-10 md:mt-20">Academic-Projects</p>
-      <p className="text-[18px] text-[#ccc] ml-10 mt-5">First Year</p>
-      <div>
-        <Project
-          id={'crossword'}
-          title={'Crossword: Effects Of Honesty'}
-          subtitle={'Subject: Fundamentals of behavioral skills(FBS)'}
-          description={'This project is a Jcross-based crossword puzzle that explores the theme of honesty and its effects on individuals and society. '}
-          link={'https://siddheshumeshsarang.github.io/crossword/'}
-          repository={'https://github.com/SIDDHESHUMESHSARANG/crossword'}
-          badges={[
-            "https://img.shields.io/badge/JCross-%23964B00.svg?logo=hotpotato5&logoColor=white",
-            "https://img.shields.io/badge/-%23E34F26.svg?logo=html5&logoColor=white",
-            "https://img.shields.io/badge/-639?logo=css&logoColor=fff",
-            "https://img.shields.io/badge/-F7DF1E?logo=javascript&logoColor=000"
-          ]}
-        />
+      <p className="text-[15px] md:text-[18px] text-[#404040] ml-10 mt-5">First Year</p>
+      <div className=" m-10 flex flex-col md:grid md:grid-cols-3 md:gap-4 mb-10">
+        <Project title={'crossword'} link={'https://siddheshumeshsarang.github.io/crossword/'}/>
       </div>
       <p className="text-[18px] text-[#505050] ml-10 mt-15">Professional-Projects</p>
       <div className="h-[100px] w-[200px] flex items-center justify-center">

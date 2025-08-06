@@ -12,9 +12,11 @@ const allowedOrigins = [
 ];
 
 app.use(cors({
-    origin: process.env.FRONTEND_PROD,
-    credentials: true,
-  }));
+  origin: process.env.FRONTEND_PROD,
+  credentials: true,
+}));
+
+
 
 app.use('/api/posts', require('./routes/app.routes.js'));
 

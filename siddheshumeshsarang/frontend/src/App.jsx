@@ -22,7 +22,7 @@ const App = () => {
       <Route path='/' element={userOffline ? <UserOffline/> : <Home/>} />
       <Route path='/about' element={<About />} />
       <Route path='/projects' element={<Projects />} />
-      <Route path='/blog' element={<Blog />} />
+      {/* TODO: <Route path='/blog' element={<Blog />} /> */}
       <Route path='/AdminVerify' element={<AdminVerify />} />
       <Route path='/blogadmin' element={<ProtectedRoute><Admin /></ProtectedRoute>} />
     </Routes>

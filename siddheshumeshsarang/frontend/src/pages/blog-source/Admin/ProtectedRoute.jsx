@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import { auth } from '../../../../firebase.js';
 
 const ADMIN_EMAIL = 'siddheshsarang0811@gmail.com';
 

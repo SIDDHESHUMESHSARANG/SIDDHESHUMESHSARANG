@@ -25,12 +25,13 @@ const Navbar = () => {
     }, [location.pathname]); 
 
     return (
-        <div>
+        <div className=''>
             <div className='flex gap-6 md:pl-0'>
                 <Link
                     to='/'
                     className='home ml-8'
-                    style={{ color: selectedLink === 'home' ? '#fff' : '#404040 ' }}
+                    style={{ color: selectedLink === 'home' ? '#fff' : '#404040 '
+                    }}
                 >
                     Home
                 </Link>
@@ -51,13 +52,13 @@ const Navbar = () => {
                     Projects
                 </Link>
 
-                <Link
+                {/* TODO: <Link
                     to='/blog'
                     className='blog'
                     style={{ color: selectedLink === 'blog' ? '#fff' : '#404040' }}
                 >
                     Blog
-                </Link>
+                </Link> */}
             </div>
         </div>
     );
