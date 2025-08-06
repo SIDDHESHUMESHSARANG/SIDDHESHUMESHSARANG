@@ -1,6 +1,6 @@
 ### Hi there <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="30" />
 
-I'm Siddhesh Umesh Sarang 
+I'm Siddhesh Umesh Sarang <br />
 Passionate computer science student exploring Computer Science & Development Fundamentals.
 Building things that solve problems and spark curiosity.
 
