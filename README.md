@@ -9,8 +9,6 @@ I love chatting about:
 - Databases & Backend
 - Machine Learning & AI
 
-***
-
 
 ### GitHub Stats
 
@@ -18,7 +16,7 @@ I love chatting about:
   <img src="https://github-readme-stats.vercel.app/api?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" />
 </p>
 
-***
+### My Tech Taste
 
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
