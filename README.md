@@ -21,6 +21,7 @@ I love chatting about:
 
 <br />
 
+### Tech Stack
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
   <img src="https://img.shields.io/badge/React-%2320232a?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
