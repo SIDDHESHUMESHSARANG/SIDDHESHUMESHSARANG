@@ -4,8 +4,7 @@ I'm [Siddhesh Umesh Sarang](https://siddheshumeshsarang.vercel.app)<br />
 Passionate computer science student exploring Computer Science & Development Fundamentals.
 Building things that solve problems and spark curiosity.
 
-I love chatting and discussing about Web Development, Databases & Backend, Machine Learning & AI
-
+**`I love chatting and discussing about Web Development, Databases & Backend, Machine Learning & AI`**
 <br />
 
 ### GitHub Stats
