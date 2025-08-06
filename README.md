@@ -4,11 +4,14 @@
 ~ Building things that solve problems and spark curiosity.
 ~ Check out my projects right here on GitHub.
 
+<br />
+
 I love chatting about:
 - Web Development
 - Databases & Backend
 - Machine Learning & AI
 
+<br />
 
 ### GitHub Stats
 
@@ -16,7 +19,7 @@ I love chatting about:
   <img src="https://github-readme-stats.vercel.app/api?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" />
 </p>
 
-### My Tech Taste
+<br />
 
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
