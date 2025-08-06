@@ -1,15 +1,10 @@
-### Hi there, I'm Siddhesh! <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="30" />
+### Hi there <img src="https://emojis.slackmojis.com/emojis/images/1536351075/4594/blob-wave.gif" width="30" />
 
-~ Passionate computer science student exploring Computer Science & Development Fundamentals.
-~ Building things that solve problems and spark curiosity.
-~ Check out my projects right here on GitHub.
+I'm Siddhesh Umesh Sarang 
+Passionate computer science student exploring Computer Science & Development Fundamentals.
+Building things that solve problems and spark curiosity.
 
-<br />
-
-I love chatting about:
-- Web Development
-- Databases & Backend
-- Machine Learning & AI
+I love chatting and discussing about Web Development, Databases & Backend, Machine Learning & AI
 
 <br />
 
