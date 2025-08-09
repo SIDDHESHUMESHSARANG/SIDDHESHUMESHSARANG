@@ -12,3 +12,7 @@ html {
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
 }
+
+.iteractives {
+    box-shadow: 2px 2px 50px #000;
+}

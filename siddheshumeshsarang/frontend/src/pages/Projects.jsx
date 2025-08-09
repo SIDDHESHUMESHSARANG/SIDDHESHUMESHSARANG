@@ -12,9 +12,9 @@ const Projects = () => {
       <p className="text-[18px] text-[#505050] ml-10 mt-5">Pet-Projects</p>
       <div className="m-10">
         <div className="flex flex-col md:grid md:grid-cols-3 gap-5 md:gap-4 mb-10">
-          <Project title={'onlylinks'} link={'https://onlyylinks.web.app'}/>
           <Project title={'sweeper'} link={'https://marketplace.visualstudio.com/items?itemName=SiddheshUmeshSarang.sweeper'} />
           <Project title={'erklaren'} link={'https://github.com/SIDDHESHUMESHSARANG//erklaren'} />
+          <Project title={'onlylinks'} link={'https://onlyylinks.web.app'}/>
           <Project title={'AI-PPT'} link={'https://github.com/SIDDHESHUMESHSARANG//AI-PPT'} />
 
         </div>

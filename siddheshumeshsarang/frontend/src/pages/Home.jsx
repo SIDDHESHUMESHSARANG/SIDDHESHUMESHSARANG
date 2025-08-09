@@ -1,6 +1,5 @@
 import Header from "../components/Header"
-import Navbar from "../components/Navbar"
-import FractalTree from "../components/FractalTree";
+import Navbar from "../components/Navbar";
 import { FaGithub } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
@@ -21,7 +20,7 @@ const Home = () => {
               <p className="text-[40px] mt-10 ml-8">Hi,This is Siddhesh</p>
               <p className="text-[15px] ml-6 mt-3">[ Developer, CS Major, a chill guy ]</p>
               <p className="text-[20px] ml-6 mt-10 text-[#505050]">I'm from Mumbai,India <br />and i code sometimes</p><br />
-            <a className=" flex flex-row gap-1 w-[120px] text-[18px] ml-6 mt-10 p-2 bg-white text-black border-4 border-[#ccc] transition duration-500 ease-in-out transform active:scale-125 hover:scale-90" href="mailto:siddheshsarang0811@gmail.com">
+            <a className="iteractives flex flex-row gap-1 w-[120px] text-[18px] ml-6 mt-10 p-3 bg-[white] text-black transition duration-500 ease-in-out transform active:scale-125 hover:scale-90" href="mailto:siddheshsarang0811@gmail.com">
               <button className="cursor-pointer">Say Hi</button>
               <CiMail size={25} />
             </a>
@@ -29,16 +28,16 @@ const Home = () => {
           </div>
         
         <div className="mt-40">
-          <p className="text-[20px] ml-6 mt-10 mb-5">Some numbers</p>
+          <p className="text-[20px] ml-6 mt-10 mb-5">Some numbers</p> <br className="hidden md:flex"/>
           <div className="md:flex md:gap-8">
-            <p className="ml-8 mb-2 text-[#404040] md:hidden">Github</p>
-            <img className="rounded-4xl ml-3 border border-[#404040] border-dotted" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=transparent&hide_border=true" alt="if the stats doesn't load, then it's the issue is with the stats provider not us." height='350px' width='350px' /><br />
-            <p className="ml-8 mb-2 text-[#404040] md:hidden">Leetcode</p>
-            <img className="rounded-4xl ml-3 border border-[#404040] border-dotted" src="https://leetcode-badge-sage.vercel.app/badge/sid-08?theme=dark" alt="if the stats doesn't load, then it's the issue is with the stats provider not us." height='350px' width='350px' />
+            <p className="ml-8 mb-2 text-[#404040] md:hidden">Github</p> <br />
+            <img className="ml-3 iteractives md:h-[200px] md:w-[400px]" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=transparent&hide_border=true" alt="if the stats doesn't load, then it's the issue is with the stats provider not us." height='350px' width='340px' /><br />
+            <br /><p className="ml-8 mb-2 text-[#404040] md:hidden">Leetcode</p> <br />
+            <img className="ml-3 iteractives md:h-[200px] md:w-[400px] p-2" src="https://leetcard.jacoblin.cool/sid-08?&theme=transparent" alt="if the stats doesn't load, then it's the issue is with the stats provider not us." height='350px' width='340px' /><br />
           </div>
-          <div className="hidden md:flex md:mt-5 md:gap-85">
-            <p className="mb-2 text-[#404040] ml-40">Github</p>
-            <p className="ml-8 mb-2 text-[#404040]">Leetcode</p>
+          <div className="hidden md:flex md:mt-5 ml-13">
+            <p className="mb-5 text-[#404040] ml-40">Github</p>
+            <p className="mb-5 text-[#404040] ml-105">Leetcode</p>
           </div>
         </div>
 
