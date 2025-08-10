@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import { MdSportsCricket } from "react-icons/md";
 import { IoFootballSharp } from "react-icons/io5";
+import { FaLaptopCode } from "react-icons/fa";
 import { SiF1 } from "react-icons/si";
 import Footer from "../components/Footer";
 
@@ -70,7 +71,8 @@ const About = () => {
       <div className="flex ml-10 gap-5 md:gap-15 md:ml-10">
         <MdSportsCricket size={35} color={'skyblue'}/>
         <IoFootballSharp size={35} color={'white'}/>
-        <SiF1 size={45} color={'red'}/>
+        <SiF1 size={55} color={'red'}/>
+        <FaLaptopCode size={45} color={'purple'}/>
       </div>
       <div className="mt-20">
         <Footer />

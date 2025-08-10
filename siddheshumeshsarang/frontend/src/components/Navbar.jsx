@@ -26,10 +26,10 @@ const Navbar = () => {
 
     return (
         <div className=''>
-            <div className='flex gap-6 md:pl-0'>
+            <div className='flex md:text-[20px] gap-6 md:pl-0'>
                 <Link
                     to='/'
-                    className='home ml-8'
+                    className='home ml-8 active:scale-80 transition duration-300'
                     style={{ color: selectedLink === 'home' ? '#fff' : '#404040 '
                     }}
                 >
@@ -38,7 +38,7 @@ const Navbar = () => {
 
                 <Link
                     to='/about'
-                    className='about'
+                    className='about active:scale-80 transition duration-300'
                     style={{ color: selectedLink === 'about' ? '#fff' : '#404040' }}
                 >
                     About
@@ -46,7 +46,7 @@ const Navbar = () => {
 
                 <Link
                     to='/projects'
-                    className='projects'
+                    className='projects active:scale-80 transition duration-300'
                     style={{ color: selectedLink === 'projects' ? '#fff' : '#404040' }}
                 >
                     Projects

@@ -16,3 +16,32 @@ html {
 .iteractives {
     box-shadow: 2px 2px 50px #000;
 }
+
+.sayhibtn {
+    background: #ffffff1d;
+    backdrop-filter: blur(0);
+    opacity: 0;
+    animation: fade 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#links:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.fadeclass {
+    opacity: 0;
+    animation: fade 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
