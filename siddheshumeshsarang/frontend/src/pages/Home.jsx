@@ -56,9 +56,9 @@ const Home = () => {
           <p className="text-[20px] md:text-2xl md:ml-8 ml-6 mt-5 mb-5">Some numbers</p> <br className="hidden md:flex"/>
           <div className="md:flex md:gap-8">
             <p className="ml-8 mb-2 text-[#404040] md:hidden">Github</p> <br />
-            <img className="ml-5 md:ml-3 w-[90%] md:h-auto md:w-auto" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=dark&hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
+            <img className="ml-5 md:ml-0 w-[90%] md:h-auto md:w-auto" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=dark&hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
             <br /><p className="ml-8 mb-2 text-[#404040] md:hidden">Leetcode</p> <br />
-            <img className="ml-5 md:ml-3 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=dark &hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
+            <img className="ml-5 md:ml-0 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=dark &hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
           </div>
         </div>
 
