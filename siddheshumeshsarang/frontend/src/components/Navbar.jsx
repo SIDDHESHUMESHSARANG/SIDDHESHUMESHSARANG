@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <div className=''>
-            <div className='flex md:text-[20px] gap-6 md:pl-0'>
+            <div className='flex md:text-[20px] p-1 gap-6 md:pl-0'>
                 <Link
                     to='/'
                     className='home ml-8 active:scale-80 transition duration-300'

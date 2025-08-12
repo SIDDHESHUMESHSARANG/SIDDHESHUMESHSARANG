@@ -5,23 +5,28 @@
 }
 
 html {
-    background: linear-gradient(to top, #000 80%, #181818);
-    color: #fff;
-    backdrop-filter: blur(20px);
+    color-scheme: dark;
 }
 
 .footer {
-    background: linear-gradient(to bottom, #000, #181818 95%);
+    background: linear-gradient(to bottom, #121212, #000 95%);
 }
 
 .img {
-    mix-blend-mode:hard-light;
-    border: 2px solid #c0c0c0;
+    border: 2px solid #404040;
+    height: 100px;
+    width: auto;
+    border-radius: 20px;
 }
 
 .img:hover {
     transform: scale(1.1);
     transition: transform 0.1s ease-in-out;
+}
+
+::selection {
+    background: #404040;
+    color: #fff;
 }
 
 .scrollable{

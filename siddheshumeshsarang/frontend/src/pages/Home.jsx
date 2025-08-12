@@ -53,20 +53,16 @@ const Home = () => {
           </div>
         
         <div className="mt-40">
-          <p className="text-[20px] md:text-2xl md:ml-8 ml-6 mt-10 mb-5">Some numbers</p> <br className="hidden md:flex"/>
+          <p className="text-[20px] md:text-2xl md:ml-8 ml-6 mt-5 mb-5">Some numbers</p> <br className="hidden md:flex"/>
           <div className="md:flex md:gap-8">
             <p className="ml-8 mb-2 text-[#404040] md:hidden">Github</p> <br />
-            <img className="ml-3 md:h-[500px] md:w-[500px]" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=transparent&hide_border=true" alt={<AltError/>} height='350px' width='340px' /><br />
+            <img className="ml-5 w-[90%] md:h-auto md:w-auto" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=dark&hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
             <br /><p className="ml-8 mb-2 text-[#404040] md:hidden">Leetcode</p> <br />
-            <img className="ml-3 md:h-[500px] md:w-[500px] p-2" src="https://leetcard.jacoblin.cool/sid-08?&theme=transparent" alt={<AltError/>} height='350px' width='340px' /><br />
-          </div>
-          <div className="hidden md:flex ml-13">
-            <p className=" text-[#404040] text-2xl ml-50">Github</p>
-            <p className="text-[#404040] text-2xl ml-120">Leetcode</p>
+            <img className="ml-5 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=dark &hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
           </div>
         </div>
 
-        <p className="text-[25px] ml-6 mt-30">Trying to contact me?</p>
+        <p className="text-[25px] ml-6 mt-20">Trying to contact me?</p>
         <p className="ml-6 text-[#505050]">checkout for these</p>
         <div className="md:flex md:flex-row md:gap-5 scrollable md:h-0 w-80 md:w-120 m-5">
           <div className="flex mt-10 md:mt-5">

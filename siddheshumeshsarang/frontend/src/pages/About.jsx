@@ -48,7 +48,7 @@ const About = () => {
         </div>
       </div>
       <p className="text-2xl p-10 mt-5">What's my tech taste?</p>
-      <div className="grid grid-cols-2 gap-8 ml-10 md:grid-cols-6 md:gap-6 md:ml-10">
+      <div className="grid grid-cols-2 md:gap-x-0 gap-8 ml-10 md:grid-cols-6 md:gap-6 md:ml-10">
         <img className="img h-[100px] w-[120px]" src="https://img.shields.io/badge/-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
         <img className="img h-[100px] w-[120px]" src="https://img.shields.io/badge/-%2320232a?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
         <img className=" img h-[100px] w-[120px]" src="https://img.shields.io/badge/-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34" />
@@ -68,11 +68,10 @@ const About = () => {
         <img className="img h-[100px] w-[120px]" src="https://img.shields.io/badge/-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="" />
       </div>
       <p className="text-2xl p-10 mt-5">What do i love?</p>
-      <div className="flex ml-10 gap-5 md:gap-15 md:ml-10">
-        <MdSportsCricket size={35} color={'skyblue'}/>
-        <IoFootballSharp size={35} color={'white'}/>
-        <SiF1 size={55} color={'red'}/>
-        <FaLaptopCode size={45} color={'purple'}/>
+      <div className="md:flex flex-row grid grid-cols-2 ml-10 gap-5 md:gap-15 md:ml-10">
+        <MdSportsCricket size={35} color={'skyblue'} className="img h-[100px] w-[120px] p-6"/>
+        <SiF1 size={55} color={'red'} className="img h-[100px] w-[120px] p-3" />
+        <FaLaptopCode size={45} color={'purple'} className="img h-[100px] w-[120px] p-5" />
       </div>
       <div className="mt-20">
         <Footer />
