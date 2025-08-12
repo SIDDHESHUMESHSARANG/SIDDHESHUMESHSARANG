@@ -5,16 +5,28 @@
 }
 
 html {
-    color-scheme: dark;
+    background: linear-gradient(to top, #000 80%, #181818);
+    color: #fff;
+    backdrop-filter: blur(20px);
+}
+
+.footer {
+    background: linear-gradient(to bottom, #000, #181818 95%);
+}
+
+.img {
+    mix-blend-mode:hard-light;
+    border: 2px solid #c0c0c0;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
 }
 
 .scrollable{
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
-}
-
-.iteractives {
-    box-shadow: 2px 2px 50px #000;
 }
 
 .sayhibtn {
@@ -36,6 +48,11 @@ html {
     animation: fade 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+}
+
+.offline {
+    background: #181818;
+    backdrop-filter: blur(20px);
 }
 
 @keyframes fade {

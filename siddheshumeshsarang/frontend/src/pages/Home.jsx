@@ -9,17 +9,17 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { AltError } from "../components/altError";
+import { MenuBar } from "../components/MenuBar";
 
 import Footer from "../components/Footer"
 
 const Home = () => {
   return (
     <div>
-        <Header/>
-        <Navbar/>
+      <MenuBar />
         <div>
           <div className="flex flex-col mt-15 md:mt-20">
-            <div>
+          <div className="">
             <SplitText
               text={`Hi, This is Siddhesh!`}
               className="md:text-[42px] text-[40px] mt-10 ml-8"
@@ -56,13 +56,13 @@ const Home = () => {
           <p className="text-[20px] md:text-2xl md:ml-8 ml-6 mt-10 mb-5">Some numbers</p> <br className="hidden md:flex"/>
           <div className="md:flex md:gap-8">
             <p className="ml-8 mb-2 text-[#404040] md:hidden">Github</p> <br />
-            <img className="ml-3 iteractives md:h-[200px] md:w-[400px]" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=transparent&hide_border=true" alt={<AltError/>} height='350px' width='340px' /><br />
+            <img className="ml-3 md:h-[500px] md:w-[500px]" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=transparent&hide_border=true" alt={<AltError/>} height='350px' width='340px' /><br />
             <br /><p className="ml-8 mb-2 text-[#404040] md:hidden">Leetcode</p> <br />
-            <img className="ml-3 iteractives md:h-[200px] md:w-[400px] p-2" src="https://leetcard.jacoblin.cool/sid-08?&theme=transparent" alt={<AltError/>} height='350px' width='340px' /><br />
+            <img className="ml-3 md:h-[500px] md:w-[500px] p-2" src="https://leetcard.jacoblin.cool/sid-08?&theme=transparent" alt={<AltError/>} height='350px' width='340px' /><br />
           </div>
-          <div className="hidden md:flex md:mt-5 ml-13">
-            <p className="mb-5 text-[#404040] ml-40">Github</p>
-            <p className="mb-5 text-[#404040] ml-105">Leetcode</p>
+          <div className="hidden md:flex ml-13">
+            <p className=" text-[#404040] text-2xl ml-50">Github</p>
+            <p className="text-[#404040] text-2xl ml-120">Leetcode</p>
           </div>
         </div>
 
