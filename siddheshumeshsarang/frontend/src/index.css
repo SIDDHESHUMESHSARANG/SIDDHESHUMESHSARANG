@@ -12,14 +12,7 @@ html {
     background: linear-gradient(to bottom, #121212, #000 95%);
 }
 
-.img {
-    border: 2px solid #404040;
-    height: 100px;
-    width: auto;
-    border-radius: 20px;
-}
-
-.img:hover {
+.tstack img:hover {
     transform: scale(1.1);
     transition: transform 0.1s ease-in-out;
 }
