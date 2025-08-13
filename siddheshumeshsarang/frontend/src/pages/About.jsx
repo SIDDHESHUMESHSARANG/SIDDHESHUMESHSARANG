@@ -83,7 +83,7 @@ const About = () => {
             </button>
           </div>
         )}
-        <button className="flex justify-start ml-10 text-[15px] text-white-400 hover:underline cursor-pointer mt-10" onClick={toggleExpand3}>
+        <button className="md:hidden flex justify-start ml-10 text-[15px] text-white-400 hover:underline cursor-pointer mt-10" onClick={toggleExpand3}>
           Show Less
         </button>
       </div>
