@@ -13,10 +13,6 @@ Building things that solve problems and spark curiosity.
   <img src="https://github-readme-stats.vercel.app/api?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&rank_icon=percentile" width=400px />
 </p>
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SIDDHESHUMESHSARANG&theme=github_dark&hide_border=true&layout=donut-vertical" width=300px/>
-</p>
-
 ### Tech Stack
 <p align="left">
   <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
