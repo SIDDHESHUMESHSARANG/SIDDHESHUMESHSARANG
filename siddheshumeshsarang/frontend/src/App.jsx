@@ -7,6 +7,7 @@ import UserOffline from './pages/UserOffline'
 import AdminVerify from './pages/blog-source/Admin/AdminVerify'
 import Admin from './pages/blog-source/Admin/Admin'
 import ProtectedRoute from './pages/blog-source/Admin/ProtectedRoute';
+import { Certs } from './pages/Certs'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
@@ -22,7 +23,7 @@ const App = () => {
       <Route path='/' element={userOffline ? <UserOffline/> : <Home/>} />
       <Route path='/about' element={<About />} />
       <Route path='/projects' element={<Projects />} />
-      {/* TODO: <Route path='/blog' element={<Blog />} /> */}
+      <Route path='/certs' element={<Certs/>} />
       <Route path='/AdminVerify' element={<AdminVerify />} />
       <Route path='/blogadmin' element={<ProtectedRoute><Admin /></ProtectedRoute>} />
     </Routes>

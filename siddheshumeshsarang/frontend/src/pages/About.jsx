@@ -11,11 +11,10 @@ import Footer from "../components/Footer";
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
-  const [isExpanded3, setIsExpanded3] = useState(false);
+ 
   const contentRef = useRef(null);
   const contentRef2 = useRef(null);
-  const contentRef3 = useRef(null);
-
+  
   const toggleExpand = () => { //
     setIsExpanded(!isExpanded); //,
   };
@@ -24,9 +23,7 @@ const About = () => {
     setIsExpanded2(!isExpanded2); //,
   };
 
-  const toggleExpand3 = () => { //
-    setIsExpanded3(!isExpanded3); //,
-  };
+ 
 
   return (
     <div>
@@ -59,33 +56,6 @@ const About = () => {
             Read Less
           </button>
         </div>
-      </div>
-
-      
-      <p className="text-2xl p-10 mt-5">Certifications</p>
-
-      <div
-        className={`relative overflow-hidden transition-all duration-00 ease-in-out ${isExpanded3 ? "max-h-full" : "max-h-[300px]"} md:max-h-full`} //,
-        ref={contentRef3}
-      >
-        <div className="flex flex-col md:flex-row gap-5 md:gap-0">
-          <Certifications img={'https://tcagurgaon.in/BackendImages/CourseImages/cs-it-training-erp-oracle.jpg'} name={'OCI DevOps Professional (2025)'} issuedBy={'Oracle University'} status={'Pending'} />
-          <Certifications img={'https://media.geeksforgeeks.org/img-practice/prod/courses/875/Web/Content/automation_testing_webp_1739771605.webp'} name={'Automation Testing'} issuedBy={'GeeksForGeeks'} status={'Pending'} />
-          <Certifications img={'https://cdn.worldvectorlogo.com/logos/ms-cit-1.svg'} name={'MS-CIT'} status={'Completed'} issuedBy={'Maharashtra Knowledge Corporation Limited (MKCL)'} issueDate={'August 2024'} credentialID={'23-6732413'} skills={['MS Word', 'MS Excel', "MS Powerpoint", "MS Outlook"]} />
-        </div>
-        {!isExpanded3 && (
-          <div className="rounded-b-3xl md:hidden absolute bottom-0 left-0 w-full h-[50px] bg-gradient-to-t from-[#181818] via-black to-transparent">
-            <button
-              onClick={toggleExpand3} //
-              className="flex justify-start ml-10 text-[15px] text-white-400 hover:underline cursor-pointer"
-            >
-              {isExpanded3 ? "Show Less" : "Show More"} {/* */}
-            </button>
-          </div>
-        )}
-        <button className="md:hidden flex justify-start ml-10 text-[15px] text-white-400 hover:underline cursor-pointer mt-10" onClick={toggleExpand3}>
-          Show Less
-        </button>
       </div>
 
       <p className="text-2xl p-10 mt-5">What's my tech taste?</p>
@@ -130,10 +100,12 @@ const About = () => {
         </button>
       </div>
       <p className="text-2xl p-10 mt-5">What do i love?</p>
-      <div className="flex flex-row gap-10 ml-10">
-        <MdSportsCricket size={35} color={'skyblue'}/>
-        <SiF1 size={55} color={'red'}/>
-        <FaLaptopCode size={45} color={'purple'}/>
+      <div className="flex flex-col md:flex-row gap-10 ml-10">
+        <p>Motosports - </p>
+        <p>Football - </p>
+        <p>Cricket - </p>
+        <p>Problem Solving - </p>
+        <p>Programming - </p>
       </div>
       <div className="mt-20">
         <Footer />

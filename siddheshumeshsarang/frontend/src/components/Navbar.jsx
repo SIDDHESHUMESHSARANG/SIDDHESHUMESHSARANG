@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'; 
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -11,10 +11,10 @@ const Navbar = () => {
                 return 'about';
             case '/projects':
                 return 'projects';
-            case '/blog':
-                return 'blog';
+            case '/certs':
+                return 'certs';
             default:
-                return 'home'; 
+                return 'home';
         }
     };
 
@@ -22,43 +22,44 @@ const Navbar = () => {
 
     useEffect(() => {
         setSelectedLink(getSelectedLink());
-    }, [location.pathname]); 
+    }, [location.pathname]);
+
+    const linkClass = (name) =>
+        `active:scale-80 transition duration-300 px-4 py-1 ${selectedLink === name
+            ? 'bg-white text-black rounded-3xl'
+            : 'text-[#404040]'
+        }`;
 
     return (
         <div className=''>
-            <div className='flex md:text-[20px] p-1 gap-6 md:pl-0'>
+            <div className='flex md:text-[20px] p-1 gap-0 md:pl-0'>
                 <Link
                     to='/'
-                    className='home ml-8 active:scale-80 transition duration-300'
-                    style={{ color: selectedLink === 'home' ? '#fff' : '#404040 '
-                    }}
+                    className={`home ml-4 ${linkClass('home')}`}
                 >
                     Home
                 </Link>
 
                 <Link
                     to='/about'
-                    className='about active:scale-80 transition duration-300'
-                    style={{ color: selectedLink === 'about' ? '#fff' : '#404040' }}
+                    className={`about ${linkClass('about')}`}
                 >
                     About
                 </Link>
 
                 <Link
                     to='/projects'
-                    className='projects active:scale-80 transition duration-300'
-                    style={{ color: selectedLink === 'projects' ? '#fff' : '#404040' }}
+                    className={`projects ${linkClass('projects')}`}
                 >
                     Projects
                 </Link>
 
-                {/* TODO: <Link
-                    to='/blog'
-                    className='blog'
-                    style={{ color: selectedLink === 'blog' ? '#fff' : '#404040' }}
+                <Link
+                    to='/certs'
+                    className={`certs ${linkClass('certs')}`}
                 >
-                    Blog
-                </Link> */}
+                    Certs
+                </Link>
             </div>
         </div>
     );

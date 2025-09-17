@@ -52,44 +52,40 @@ const Home = () => {
             </div>
           </div>
         
-        <div className="mt-40">
-          <p className="text-[20px] md:text-2xl md:ml-8 ml-6 mt-5 mb-5">Some numbers</p> <br className="hidden md:flex"/>
+        <div className="mt-40 md:ml-5">
           <div className="md:flex md:gap-8">
-            <p className="ml-8 mb-2 text-[#404040] md:hidden">Github</p> <br />
-            <img className="ml-5 md:ml-0 w-[90%] md:h-auto md:w-auto" src="https://github-readme-streak-stats.herokuapp.com/?user=SIDDHESHUMESHSARANG&theme=dark&hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
-            <br /><p className="ml-8 mb-2 text-[#404040] md:hidden">Leetcode</p> <br />
-            <img className="ml-5 md:ml-0 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=dark &hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
+            <img className="stats ml-5 md:ml-0 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=transparent&hide_border=false" alt={<AltError/>} height='auto' width='auto' /><br />
           </div>
         </div>
 
         <p className="text-[25px] ml-6 mt-20">Trying to contact me?</p>
-        <p className="ml-6 text-[#505050]">checkout for these</p>
-        <div className="md:flex md:flex-row md:gap-5 scrollable md:h-0 w-80 md:w-120 m-5">
+        <p className="ml-6 text-[gray]">checkout for these</p>
+        <div className="md:flex md:flex-row md:gap-5 scrollable md:h-0 w-80 md:w-120 m-7">
           <div className="flex mt-10 md:mt-5">
-            <SiGmail size={25} color={"#ccc"}/>
+            <SiGmail size={25} color={"gray"}/>
             <a href="mailto:siddheshsarang0811@gmail.com" target="_blank">
-              <p id="links" className="text-[17px] text-[#ccc]">&nbsp;siddheshsarang0811@gmail.com</p>
+              <p id="links" className="text-[17px] text-[gray]">&nbsp;siddheshsarang0811@gmail.com</p>
             </a>
           </div>
           <br /><br />
           <div className="flex md:mt-5">
-            <FaGithub size={25} color={"#ccc"} />
+            <FaGithub size={25} color={"gray"} />
             <a href="https://github.com/SIDDHESHUMESHSARANG" target="_blank">
-              <p id="links" className="text-[17px] text-[#ccc]">&nbsp;SIDDHESHUMESHSARANG</p>
+              <p id="links" className="text-[17px] text-[gray]">&nbsp;SIDDHESHUMESHSARANG</p>
             </a>
           </div>
           <br /><br />
           <div className="flex md:mt-5">
-            <FaXTwitter size={25} color={"#ccc"} />
+            <FaXTwitter size={25} color={"gray"} />
             <a href="https://x.com/iamsid08_" target="_blank">
-              <p id="links" className="text-[17px] text-[#ccc]">&nbsp;iamsid08_</p>
+              <p id="links" className="text-[17px] text-[gray]">&nbsp;iamsid08_</p>
             </a>
           </div>
           <br /><br />
           <div className="flex md:mt-5">
-            <FaInstagram size={25} color={"#ccc"} />
+            <FaInstagram size={25} color={"gray"} />
             <a href="https://instagram.com/iamsid08" target="_blank">
-              <p id="links" className="text-[17px] text-[#ccc]">&nbsp;iamsid08</p>
+              <p id="links" className="text-[17px] text-[gray]">&nbsp;iamsid08</p>
             </a>
           </div>
         </div>
