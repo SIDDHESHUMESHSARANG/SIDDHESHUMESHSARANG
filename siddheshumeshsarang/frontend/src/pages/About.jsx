@@ -101,7 +101,7 @@ const About = () => {
       </div>
       <p className="text-2xl p-10 mt-5">What do i love?</p>
       <div className="flex flex-col md:flex-row gap-10 ml-10">
-        <p>Motosports - </p>
+        <p>Motorsports - </p>
         <p>Football - </p>
         <p>Cricket - </p>
         <p>Problem Solving - </p>
