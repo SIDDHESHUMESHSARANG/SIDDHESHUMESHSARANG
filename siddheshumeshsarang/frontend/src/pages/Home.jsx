@@ -45,7 +45,7 @@ const Home = () => {
               <ShinyText text={"and i code sometimes"} disabled={false} speed={3} className='custom-class text-[20px] ml-8 text-[#505050] md:text-[22px]' />
 
             </div>
-              <a className="sayhibtn flex flex-row gap-1 md:w-[130px] w-[120px] text-[18px] ml-8 mt-10 p-3 md:p-4 text-white transition duration-500 ease-in-out transform active:scale-115 hover:scale-105" href="mailto:siddheshsarang0811@gmail.com">
+              <a className="sayhibtn flex flex-row gap-1 md:w-[130px] w-[120px] text-[18px] ml-8 mt-10 p-3 mdp-5 rounded-3xl text-white transition duration-500 ease-in-out transform active:scale-115 hover:scale-105" href="mailto:siddheshsarang0811@gmail.com">
                 <button className="cursor-pointer">Say Hi</button>
                 <CiMail size={25} />
               </a>
