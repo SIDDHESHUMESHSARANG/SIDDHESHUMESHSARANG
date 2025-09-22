@@ -7,9 +7,7 @@ Building things that solve problems and spark curiosity.
 <p align="left">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=30&pause=1000&color=FFF&center=true&vCenter=true&width=900&height=100&lines=I love chatting and discussing about+Web Development+%26+Database & Backend;100K%2B+Machine Learning & AI">
 </p>
-
-
-
+<br />
 ### GitHub Stats
 
 <p align="left">
