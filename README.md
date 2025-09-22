@@ -5,9 +5,9 @@ Passionate computer science student exploring Computer Science & Development Fun
 Building things that solve problems and spark curiosity.
 
 <p align="left">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=30&pause=1000&color=FFF&center=true&vCenter=true&width=900&height=100&lines=I love chatting and discussing about+Web Development+%26+Database & Backend;100K%2B+Machine Learning & AI">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=500&pause=1000&color=FFFFFF&width=435&lines=I+Love+Chatting+&+Discussing+About+...;Web+Development+;App+Development+;Backend%2C+Databases+;Machine+Learning+%26+AI;And+many+more..+" alt="Typing SVG" /></a> 
 </p>
-<br />
+
 ### GitHub Stats
 
 <p align="left">
