@@ -51,10 +51,9 @@ const Home = () => {
               </a>
             </div>
           </div>
-        
         <div className="mt-40 md:ml-5">
           <div className="md:flex md:gap-8">
-            <img className="stats ml-5 md:ml-0 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=transparent&hide_border=false" alt={<AltError/>} height='auto' width='auto' /><br />
+            <img className="border border-[#404040] stats ml-5 md:ml-0 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=dark&hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
           </div>
         </div>
 

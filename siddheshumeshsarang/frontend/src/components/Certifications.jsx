@@ -1,6 +1,6 @@
-export const Certifications = ({img, name, status, issuedBy, issueDate, credentialID, skills}) => {
+export const Certifications = ({img, name, status, issuedBy, issueDate, credentialID, skills, ETC}) => {
   return (
-    <div className='bg-[#151515] border border-[#404040] h-auto w-[80%] md:w-[30%] ml-10 p-4'>
+    <div className='bg-[#151515] border border-[#404040] h-auto w-[80%] md:w-[30%] ml-10 p-4 hover:scale-102 transition-transform duration-300 ease-in-out'>
         {img && (
             <img src={img} alt="certificate image" height={200} width={200} />
         )}
@@ -32,6 +32,14 @@ export const Certifications = ({img, name, status, issuedBy, issueDate, credenti
                   </div>
               </div>
         )}
+
+        {
+            ETC && (
+                  <div className='ml-0 w-40 mt-2 bg-[#202020] p-0.3 rounded-full'>
+                    <p className="text-[#606060] m-2">ETC: {ETC}</p>
+                </div>
+            )
+        }
     </div>
   )
 }
