@@ -10,6 +10,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { AltError } from "../components/altError";
 import { MenuBar } from "../components/MenuBar";
+import BotpressChat from "../components/BotpressChat";
 
 import Footer from "../components/Footer"
 
@@ -57,6 +58,9 @@ const Home = () => {
           </div>
         </div>
 
+        <div>
+          <BotpressChat />
+        </div>
         <p className="text-[25px] ml-6 mt-20">Trying to contact me?</p>
         <p className="ml-6 text-[gray]">checkout for these</p>
         <div className="md:flex md:flex-row md:gap-5 scrollable md:h-0 w-80 md:w-120 m-7">
