@@ -5,7 +5,7 @@ Passionate computer science student exploring Computer Science & Development Fun
 Building things that solve problems and spark curiosity.
 
 <p align="left">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=500&pause=1000&color=FFFFFF&width=435&lines=Ask+Me+About:+Web+Development+;App+Development+;Backend%2C+Databases+;Machine+Learning+%26+AI;And+many+more..+" alt="Typing SVG" /></a> 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=500&pause=1000&color=FFFFFF&width=435&lines=Ask+Me+About:+;Web+Development+;App+Development+;Backend%2C+Databases+;Machine+Learning+%26+AI;And+many+more..+" alt="Typing SVG" /></a> 
 </p>
 
 ### Tech Stack
