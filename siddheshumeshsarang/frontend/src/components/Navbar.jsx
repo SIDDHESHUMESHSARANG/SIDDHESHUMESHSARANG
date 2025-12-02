@@ -31,7 +31,7 @@ const Navbar = () => {
         }`;
 
     return (
-        <div className='bg-black rounded-3xl md:w-[500px] w-auto'>
+        <div className='md:bg-black md:rounded-3xl md:w-[400px]'>
             <div className='flex md:text-[20px] p-1 gap-0 md:pl-0'>
                 <Link
                     to='/'
@@ -66,5 +66,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
