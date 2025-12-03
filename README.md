@@ -10,12 +10,20 @@ Building things that solve problems and spark curiosity.
 
 ### Tech Stack
 <p align="left">
-  <img src="https://img.shields.io/badge/JavaScript-%23323330?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
-  <img src="https://img.shields.io/badge/React-%2320232a?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
-  <img src="https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34" />
-  <img src="https://img.shields.io/badge/Vercel-%23000000?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-%23F05033?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-%230db7ed?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-%2300599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <!-- Development Tools & Version Control -->
+<img src="img.shields.io" alt="Git badge"/>
+<img src="img.shields.io" alt="Docker badge"/>
+<img src="img.shields.io" alt="Docker badge"/>
+<img src="img.shields.io" alt="Python badge"/>
+
+<!-- Machine Learning Stack -->
+<img src="img.shields.io" alt="Ollama badge"/>
+<img src="img.shields.io" alt="scikit-learn badge"/>
+
+<!-- Web Development Stack (MERN/similar) -->
+<img src="img.shields.io" alt="Node.js badge"/>
+<img src="img.shields.io" alt="Express badge"/>
+<img src="img.shields.io" alt="React badge"/>
+<img src="img.shields.io" alt="Vite badge"/>
+
 </p>
