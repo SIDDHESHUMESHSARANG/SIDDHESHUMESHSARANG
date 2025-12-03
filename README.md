@@ -10,20 +10,23 @@ Building things that solve problems and spark curiosity.
 
 ### Tech Stack
 <p align="left">
-  <!-- Development Tools & Version Control -->
-<img src="img.shields.io" alt="Git badge"/>
-<img src="img.shields.io" alt="Docker badge"/>
-<img src="img.shields.io" alt="Docker badge"/>
-<img src="img.shields.io" alt="Python badge"/>
+  <!-- Version Control -->
+<img src="https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white" alt="Git">
 
-<!-- Machine Learning Stack -->
-<img src="img.shields.io" alt="Ollama badge"/>
-<img src="img.shields.io" alt="scikit-learn badge"/>
+<!-- Containerization -->
+<img src="https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=Docker&logoColor=white" alt="Docker">
 
-<!-- Web Development Stack (MERN/similar) -->
-<img src="img.shields.io" alt="Node.js badge"/>
-<img src="img.shields.io" alt="Express badge"/>
-<img src="img.shields.io" alt="React badge"/>
-<img src="img.shields.io" alt="Vite badge"/>
+<!-- Machine Learning & AI -->
+<img src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/scikitlearn-F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+<img src="https://img.shields.io/badge/Ollama-000000.svg?style=for-the-badge&logo=Ollama&logoColor=white" alt="Ollama">
+
+<!-- Backend -->
+<img src="https://img.shields.io/badge/Node.js-5FA04E.svg?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+<img src="https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white" alt="Express">
+
+<!-- Frontend -->
+<img src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black" alt="React">
+<img src="https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white" alt="Vite">
 
 </p>
