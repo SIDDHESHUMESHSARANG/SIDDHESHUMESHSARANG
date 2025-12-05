@@ -12,10 +12,10 @@ const Projects = () => {
       <p className="text-[18px] text-[#505050] ml-10 mt-5">Pet-Projects</p>
       <div className="m-10">
         <div className="flex flex-col md:grid md:grid-cols-3 gap-5 md:gap-4 mb-10">
-          <Project title={'AI-PPT'} link={'https://github.com/SIDDHESHUMESHSARANG//AI-PPT'} />
-          <Project title={'onlylinks'} link={'https://onlyylinks.web.app'}/>
-          <Project title={'sweeper'} link={'https://marketplace.visualstudio.com/items?itemName=SiddheshUmeshSarang.sweeper'} />
-          <Project title={'erklaren'} link={'https://github.com/SIDDHESHUMESHSARANG//erklaren'} />
+          <Project title={'AI-PPT'} Gitlink={'https://github.com/SIDDHESHUMESHSARANG/AI-PPT'} deployStatus={false} />
+          <Project title={'OnlyLinks'} Gitlink={'https://github.com/SIDDHESHUMESHSARANG/onlylinks'} deployLink={"https://onlyylinks.web.app"} deployStatus={true}/>
+          <Project title={'Sweeper'} Gitlink={'https://github.com/SIDDHESHUMESHSARANG/sweeper'} deployLink={'https://marketplace.visualstudio.com/items?itemName=SiddheshUmeshSarang.sweeper'} deployStatus={true} />
+          <Project title={'Erklaren'} Gitlink={'https://github.com/SIDDHESHUMESHSARANG//erklaren'} deployStatus={false} />
 
         </div>
 
