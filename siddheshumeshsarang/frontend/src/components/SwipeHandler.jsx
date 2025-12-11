@@ -1,4 +1,8 @@
 // src/components/SwipeHandler.jsx
+
+// under development, rn unavailable 
+
+
 import { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 

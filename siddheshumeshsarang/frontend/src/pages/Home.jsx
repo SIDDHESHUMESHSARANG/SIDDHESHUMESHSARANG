@@ -19,11 +19,11 @@ const Home = () => {
     <div>
       <MenuBar />
         <div>
-          <div className="flex flex-col mt-15 md:mt-20">
+          <div className="flex flex-col mt-15 md:mt-30`">
           <div className="md:flex md:flex-col md:justify-center md:items-center">
             <SplitText
               text={`Hi, This is Siddhesh!`}
-              className="md:text-[42px] text-[40px] mt-10 ml-8"
+              className="md:text-[42px] text-[40px] mt-10 md:mt-30 ml-8"
               delay={100}
               duration={1}
               ease="power3.out"

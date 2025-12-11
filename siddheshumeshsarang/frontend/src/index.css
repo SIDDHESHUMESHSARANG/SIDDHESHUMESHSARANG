@@ -53,6 +53,16 @@ html {
     backdrop-filter: blur(20px);
 }
 
+.interests img {
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        display: none !important;
+    }
+}
+
 @keyframes fade {
     from{
         opacity: 0;

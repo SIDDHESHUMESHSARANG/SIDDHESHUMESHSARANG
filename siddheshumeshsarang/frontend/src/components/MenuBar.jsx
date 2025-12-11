@@ -3,6 +3,6 @@ import Header from './Header'
 import Navbar from './Navbar'
 export const MenuBar = () => {
   return (
-      <div className='navbar'><Header /><Navbar/></div>
+    <div className=''><Header /><div className='md:hidden'><Navbar /></div></div>
   )
 }
