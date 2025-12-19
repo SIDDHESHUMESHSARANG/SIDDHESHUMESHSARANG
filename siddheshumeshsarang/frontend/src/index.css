@@ -5,7 +5,7 @@
 }
 
 html {
-    color-scheme: dark;
+    color-scheme: dark !important;
 }
 
 .footer {
@@ -22,7 +22,7 @@ html {
     color: #fff;
 }
 
-.scrollable{
+.scrollable {
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
 }
@@ -36,7 +36,7 @@ html {
     animation-fill-mode: forwards;
 }
 
-#links:hover{
+#links:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
 }
@@ -64,9 +64,11 @@ html {
 }
 
 @keyframes fade {
-    from{
+    from {
         opacity: 0;
-    } to {
+    }
+
+    to {
         opacity: 1;
     }
 }

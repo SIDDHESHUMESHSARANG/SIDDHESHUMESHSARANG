@@ -18,44 +18,32 @@ const Home = () => {
   return (
     <div>
       <MenuBar />
-        <div>
-          <div className="flex flex-col mt-15 md:mt-30`">
+      <div>
+        <div className="flex flex-col mt-15 md:mt-15">
           <div className="md:flex md:flex-col md:justify-center md:items-center">
-            <SplitText
-              text={`Hi, This is Siddhesh!`}
-              className="md:text-[42px] text-[40px] mt-10 md:mt-30 ml-8"
-              delay={100}
-              duration={1}
-              ease="power3.out"
-              splitType="chars"
-              from={{ opacity: 0, y: 40 }}
-              to={{ opacity: 1, y: 0 }}
-              threshold={0.1}
-              rootMargin="-100px"
-              textAlign="left"
-            />
+            <h1 className="md:text-[42px] text-[40px] mt-10 md:mt-30 ml-6 fadeclass">Hi, this is Siddhesh !</h1>
             <div className="fadeclass">
               <GradientText
                 colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                 animationSpeed={3}
                 showBorder={false}
-                className="custom-class text-[15px] md:text-[18px] ml-5 mt-3 p-2"
+                className="custom-class text-[15px] md:text-[18px] ml-3 mt-3 p-2"
               >[ Developer, CS Major, a chill guy ]</GradientText>
 
-              <ShinyText text={"I'm from Mumbai,India"} disabled={false} speed={3} className='custom-class text-[20px] ml-8 md:ml-20 mt-10 text-[#505050] md:text-[22px]' /> <br />
-              <ShinyText text={"and i code sometimes"} disabled={false} speed={3} className='custom-class text-[20px] ml-8 md:ml-20 text-[#505050] md:text-[22px]' />
+              <ShinyText text={"I'm from Mumbai,India"} disabled={false} speed={3} className='custom-class text-[20px] ml-6 md:ml-20 mt-10 text-[#505050] md:text-[22px]' /> <br />
+              <ShinyText text={"and i code sometimes"} disabled={false} speed={3} className='custom-class text-[20px] ml-6 md:ml-20 text-[#505050] md:text-[22px]' />
 
             </div>
-              <a className="sayhibtn flex flex-row gap-1 md:w-[130px] w-[120px] text-[18px] ml-8 md:ml-0 mt-10 p-3 mdp-5 text-white transition duration-500 ease-in-out transform active:scale-115 hover:scale-105" href="mailto:siddheshsarang0811@gmail.com">
-                <button className="cursor-pointer">Say Hi</button>
-                <CiMail size={25} />
-              </a>
-            </div>
+            <a className="sayhibtn flex flex-row gap-1 md:w-[130px] w-[120px] text-[18px] ml-6 md:ml-0 mt-10 p-3 mdp-5 text-white transition duration-500 ease-in-out transform active:scale-115 hover:scale-105" href="mailto:siddheshsarang0811@gmail.com">
+              <button className="cursor-pointer">Say Hi</button>
+              <CiMail size={25} />
+            </a>
           </div>
+        </div>
         <div className="mt-40 md:ml-5 md:flex flex-col md:justify-center md:items-center">
           <p className="md:ml-0 ml-6 mb-2 md:mb-4 md:text-xl">Leetcode stats</p>
           <div className="md:flex md:gap-8">
-            <img className="border border-[#404040] stats ml-5 md:ml-0 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=dark&hide_border=true" alt={<AltError/>} height='auto' width='auto' /><br />
+            <img className="border border-[#404040] stats ml-5 md:ml-0 md:h-auto md:w-auto p-2 w-[90%]" src="https://leetcard.jacoblin.cool/sid-08?&theme=dark&hide_border=true" alt={<AltError />} height='auto' width='auto' /><br />
           </div>
         </div>
 
@@ -99,7 +87,7 @@ const Home = () => {
         <div className="mt-20">
           <Footer />
         </div>
-        </div>
+      </div>
     </div>
   )
 }

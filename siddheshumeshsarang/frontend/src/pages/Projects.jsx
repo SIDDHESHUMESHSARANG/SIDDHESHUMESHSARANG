@@ -9,7 +9,7 @@ const Projects = () => {
   const [openId, setOpenId] = useState(null);
   return (
     <div>
-      <MenuBar/>
+      <MenuBar />
       <p className="text-2xl ml-10 mt-10">Projects</p>
       <p className="text-[18px] text-[#505050] ml-10 mt-5">Pet-Projects</p>
       <div className="m-10">

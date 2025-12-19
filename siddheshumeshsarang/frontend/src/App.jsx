@@ -7,6 +7,7 @@ import UserOffline from './pages/UserOffline'
 import AdminVerify from './pages/blog-source/Admin/AdminVerify'
 import Admin from './pages/blog-source/Admin/Admin'
 import ProtectedRoute from './pages/blog-source/Admin/ProtectedRoute';
+import SeasonalApp from './components/SeasonalSnow'
 import { Certs } from './pages/Certs'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -19,6 +20,7 @@ const App = () => {
     }
   }, [])
   return (
+    <SeasonalApp>
     <Routes>
       <Route path='/' element={userOffline ? <UserOffline /> : <Home />} />
       <Route path='/about' element={<About />} />
@@ -27,6 +29,7 @@ const App = () => {
       <Route path='/AdminVerify' element={<AdminVerify />} />
       <Route path='/blogadmin' element={<ProtectedRoute><Admin /></ProtectedRoute>} />
     </Routes>
+    </SeasonalApp>
   )
 }
 

@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <div>
-      <MenuBar/>
+      <MenuBar />
 
       <div>
         <p className="text-2xl ml-10 mt-10">About Me</p>
@@ -108,14 +108,14 @@ const About = () => {
             04 Problem Solving
             05 Programming
             */}
-            <div className="relative w-[95%] ml-2.5 md:h-100 md:w-197 md:ml-10 z-0 overflow-hidden">
-              <img src="https://ecampusontario.pressbooks.pub/app/uploads/sites/2109/2021/11/programming-gb0e197598_1920.jpg" alt="Programming" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
-              <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white">
-                <div className="text-4xl md:text-5xl font-bold">01</div>
-                <div className="text-lg md:text-xl mt-1">Programming</div>
-              </div>
-            </div>
+        <div className="relative w-[95%] ml-2.5 md:h-100 md:w-197 md:ml-10 z-0 overflow-hidden">
+          <img src="https://ecampusontario.pressbooks.pub/app/uploads/sites/2109/2021/11/programming-gb0e197598_1920.jpg" alt="Programming" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
+          <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white">
+            <div className="text-4xl md:text-5xl font-bold">01</div>
+            <div className="text-lg md:text-xl mt-1">Programming</div>
+          </div>
+        </div>
 
         <div className="relative w-[95%] ml-2.5 md:h-100 md:w-170 md:ml-18 z-0 overflow-hidden">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA8wQgE57HLAQVHy7Sb-zOhzNXFCafMaP8ow&s" alt="Problem Solving" className="w-full h-full object-cover" />
