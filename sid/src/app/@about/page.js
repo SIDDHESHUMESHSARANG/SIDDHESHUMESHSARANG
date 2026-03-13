@@ -52,12 +52,15 @@ const AboutPage = () => {
             <div className="rounded-3xl border border-primary/20 bg-base-300 shadow-2xl overflow-hidden">
               <div className="p-5 md:p-7">
                 <p className="text-base md:text-lg leading-relaxed">
-                  I’m <span className="font-semibold">Siddhesh Umesh Sarang</span>
-                  . I like turning ideas into shipped products—clean UI, solid
-                  APIs, and the kind of debugging that ends with a tidy commit.
-                  I’m especially into modern web apps with{" "}
-                  <span className="text-primary font-semibold">Next.js</span>,
-                  and I’m always learning something new along the way.
+                  Hi, I am Siddhesh Umesh Sarang. I am a passionate software
+                  developer with a strong interest in building impactful digital
+                  experiences. With a background in computer science and
+                  hands-on experience in web development, I enjoy solving
+                  complex problems and continuously learning new technologies.
+                  Outside of coding, I love exploring new ideas, collaborating
+                  with others, and contributing to open-source projects. I am
+                  always eager to take on new challenges and grow as a
+                  developer.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
@@ -67,11 +70,11 @@ const AboutPage = () => {
                   >
                     See projects
                   </Link>
-                  <Link className="btn btn-ghost rounded-2xl" href="/blog">
+                  <Link className="btn btn-primary rounded-2xl" href="/blog">
                     Read the blog
                   </Link>
                   <a
-                    className="btn btn-outline rounded-2xl"
+                    className="btn btn-primary rounded-2xl"
                     href={`mailto:${contactEmail}`}
                   >
                     Email me
@@ -152,7 +155,9 @@ const AboutPage = () => {
 
                 <div className="mt-5 space-y-3 text-sm md:text-base">
                   <div className="flex items-center justify-between gap-4">
-                    <span className="text-base-content/70"><Mail className="w-4 h-4" /></span>
+                    <span className="text-base-content/70">
+                      <Mail className="w-4 h-4" />
+                    </span>
                     <a
                       href="mailto:siddheshsarang0811@gmail.com"
                       className="link link-primary break-all"
@@ -161,19 +166,25 @@ const AboutPage = () => {
                     </a>
                   </div>
                   <div className="flex items-center justify-between gap-4">
-                    <span className="text-base-content/70"><Github className="w-4 h-4"/></span>
+                    <span className="text-base-content/70">
+                      <Github className="w-4 h-4"/>
+                    </span>
                     <span className="font-mono text-xs md:text-sm break-all">
                       SIDDHESHUMESHSARANG
                     </span>
                   </div>
                   <div className="flex items-center justify-between gap-4">
-                    <span className="text-base-content/70"><Twitter className="w-4 h-4" /></span>
+                    <span className="text-base-content/70">
+                      <Twitter className="w-4 h-4" />
+                    </span>
                     <span className="font-mono text-xs md:text-sm break-all">
                       iamsid08_
                     </span>
                   </div>
                   <div className="flex items-center justify-between gap-4">
-                    <span className="text-base-content/70"><Instagram className="w-4 h-4"/></span>
+                    <span className="text-base-content/70">
+                      <Instagram className="w-4 h-4" />
+                    </span>
                     <span className="font-mono text-xs md:text-sm break-all">
                       iamsid08
                     </span>
@@ -195,19 +206,6 @@ const AboutPage = () => {
                 </p>
               </div>
 
-              <div className="stats shadow bg-base-200 border border-primary/10 w-full">
-                <div className="stat">
-                  <div className="stat-title">Response time</div>
-                  <div className="stat-value text-primary text-2xl">Fast</div>
-                  <div className="stat-desc">If it’s interesting</div>
-                </div>
-                <div className="stat">
-                  <div className="stat-title">Preferred stack</div>
-                  <div className="stat-value text-2xl">Next</div>
-                  <div className="stat-desc">+ Tailwind & Daisy UI</div>
-                </div>
-              </div>
-
               <div className="flex flex-wrap gap-3">
                 <a
                   className="btn btn-primary rounded-2xl"
@@ -216,7 +214,7 @@ const AboutPage = () => {
                   Reach out
                 </a>
                 <a
-                  className="btn btn-outline rounded-2xl"
+                  className="btn btn-primary rounded-2xl"
                   href={githubUrl}
                   target="_blank"
                   rel="noreferrer"

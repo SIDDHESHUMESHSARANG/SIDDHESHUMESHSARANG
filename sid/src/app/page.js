@@ -2,24 +2,39 @@
 import React from "react";
 import Link from "next/link";
 import TextType from "@/components/react-bits/Typewriter-reactbits";
+import { Github, GithubIcon, Instagram } from "lucide-react";
 
 const Page = () => {
   return (
     <div className="page flex flex-col items-center md:items-start md:p-6 mt-5 md:mt-0 min-h-screen">
-      <Link href="/blog">
-        <div className="flex items-center gap-2 btn bg-primary/10 border border-primary rounded-3xl w-fit px-6">
-          <span className="relative flex size-3">
-            <span className="status rounded-full status-success animate-ping absolute inline-flex h-full w-full opacity-75"></span>
-            <span className="status rounded-full status-success relative inline-flex size-3"></span>
-          </span>
-          Visit my blog{" "}
-          <span className="underline underline-offset-2 font-bold" href="/blog">
-            Here
-          </span>
-        </div>
-      </Link>
+      <div className="flex gap-5">
+        <Link href="/blog">
+          <div className="flex items-center gap-2 btn bg-primary/10 border border-primary rounded-3xl w-fit px-6 hover:bg-primary">
+            <span className="relative flex size-3">
+              <span className="status rounded-full status-success animate-ping absolute inline-flex h-full w-full opacity-75"></span>
+              <span className="status rounded-full status-success relative inline-flex size-3"></span>
+            </span>
+            Visit my blog{" "}
+            <span
+              className="underline underline-offset-2 font-bold"
+              href="/blog"
+            >
+              Here
+            </span>
+          </div>
+        </Link>
+
+        <Link href="https://github.com/SIDDHESHUMESHSARANG" target="_blank" className="hidden md:flex">
+          <div className="flex items-center gap-2 btn bg-primary/10 border border-primary rounded-3xl w-fit px-6 hover:bg-primary">
+            <span className="relative flex">
+              <Github size={20} />
+            </span>
+            Follow my Github
+          </div>
+        </Link>
+      </div>
       <div className="flex flex-col md:flex-row gap-2 md:mt-38 mt-30 p-4 font-bold text-center md:text-left max-w-xs md:max-w-none self-center">
-        <h1 className="text-5xl md:text-7xl tracking-tight">
+        <h1 className="text-5xl md:text-7xl tracking-tight ">
           Sometimes i just{" "}
         </h1>
         <TextType
