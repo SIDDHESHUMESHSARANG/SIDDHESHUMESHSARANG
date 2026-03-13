@@ -36,7 +36,7 @@ const Page = () => {
         <span>Scroll down</span>
         <span className="text-lg">↓</span>
       </div>
-      <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 mt-24 md:mt-32 px-4 pb-20">
+      <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 mt-30 md:mt-32 px-4 pb-20">
         <div className="mockup-window border border-primary/20 bg-base-300 w-full max-w-85 md:max-w-md shadow-2xl rounded-3xl shrink-0 transition-transform hover:scale-[1.02]">
           <div className="p-4 md:p-6 bg-base-200 rounded-none border-t border-primary/10 text-[11px] md:text-sm h-full">
             <pre data-prefix="$">
