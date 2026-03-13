@@ -18,7 +18,7 @@ const Page = () => {
           </span>
         </div>
       </Link>
-      <div className="flex flex-col md:flex-row gap-2 md:mt-41 mt-30 p-4 font-bold text-center md:text-left max-w-xs md:max-w-none self-center">
+      <div className="flex flex-col md:flex-row gap-2 md:mt-38 mt-30 p-4 font-bold text-center md:text-left max-w-xs md:max-w-none self-center">
         <h1 className="text-5xl md:text-7xl tracking-tight">
           Sometimes i just{" "}
         </h1>

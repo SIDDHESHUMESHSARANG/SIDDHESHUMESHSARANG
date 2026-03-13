@@ -63,7 +63,7 @@ const AboutPage = () => {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
                     className="btn btn-primary rounded-2xl"
-                    href="/projects"
+                    href="#projects"
                   >
                     See projects
                   </Link>
