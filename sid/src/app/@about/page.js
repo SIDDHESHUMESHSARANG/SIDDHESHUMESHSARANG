@@ -67,11 +67,11 @@ const AboutPage = () => {
                   >
                     See projects
                   </Link>
-                  <Link className="btn btn-ghost rounded-2xl" href="/blog">
+                  <Link className="btn btn-primary rounded-2xl" href="/blog">
                     Read the blog
                   </Link>
                   <a
-                    className="btn btn-outline rounded-2xl"
+                    className="btn btn-primary rounded-2xl"
                     href={`mailto:${contactEmail}`}
                   >
                     Email me
