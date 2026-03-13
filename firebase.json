@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "https://siddheshumeshsarang.web.app**",
+        "destination": "https://siddheshumeshsarang.vercel.app",
+        "type": 301
+      },
+      {
+        "source": "https://siddheshumeshsarang.web.app**",
+        "destination": "https://siddheshumeshsarang.vercel.app",
+        "type": 301
+      }
+    ]
+  }
+}
