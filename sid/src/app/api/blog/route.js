@@ -5,7 +5,7 @@ import Blog from '../models/blogSchema'
 export async function GET() {
     try {
         await connectDB()
-        const blog = await Blog.find()
+        const blog = await Blog.find().sort({createdAt: -1})
         return NextResponse.json(blog, { status: 200 })
     } catch (error) {
         return NextResponse.json(
