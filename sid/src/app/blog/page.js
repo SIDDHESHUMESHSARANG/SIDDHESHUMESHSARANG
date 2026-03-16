@@ -79,7 +79,7 @@ const BlogPage = () => {
                   @siddheshumeshsarang
                 </span>
                 <span className="text-[11px] md:text-sm text-secondary font-medium">
-                  {formatTimeAgo(post.createdAt)}
+                  {formatTimeAgo(post.createdAt)} ago
                 </span>
               </div>
 
