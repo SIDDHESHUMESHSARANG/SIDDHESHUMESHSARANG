@@ -3,6 +3,25 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
+const formatTimeAgo = (date) => {
+  const now = new Date();
+  const diffInSeconds = Math.floor((now - new Date(date)) / 1000);
+
+  if (diffInSeconds < 60) return "Just now";
+  
+  const diffInMinutes = Math.floor(diffInSeconds / 60);
+  if (diffInMinutes < 60) return `${diffInMinutes}m`;
+  
+  const diffInHours = Math.floor(diffInMinutes / 60);
+  if (diffInHours < 24) return `${diffInHours}h`;
+  
+  const diffInDays = Math.floor(diffInHours / 24);
+  if (diffInDays < 7) return `${diffInDays}d`;
+  
+  const diffInWeeks = Math.floor(diffInDays / 7);
+  return `${diffInWeeks}w`;
+};
+
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -60,13 +79,7 @@ const BlogPage = () => {
                   @siddheshumeshsarang
                 </span>
                 <span className="text-[11px] md:text-sm text-secondary font-medium">
-                  {new Date(post.createdAt).toLocaleDateString("en-IN", {
-                    day: "numeric",
-                    month: "numeric",
-                    year: "2-digit",
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
+                  {formatTimeAgo(post.createdAt)}
                 </span>
               </div>
 
