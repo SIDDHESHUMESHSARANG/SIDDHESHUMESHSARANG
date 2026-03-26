@@ -1,6 +1,25 @@
 import React from 'react'
 
 const BlogCard = ({posts}) => {
+  const formatTimeAgo = (date) => {
+    const now = new Date();
+    const diffInSeconds = Math.floor((now - new Date(date)) / 1000);
+
+    if (diffInSeconds < 60) return "Just now";
+
+    const diffInMinutes = Math.floor(diffInSeconds / 60);
+    if (diffInMinutes < 60) return `${diffInMinutes}m`;
+
+    const diffInHours = Math.floor(diffInMinutes / 60);
+    if (diffInHours < 24) return `${diffInHours}h`;
+
+    const diffInDays = Math.floor(diffInHours / 24);
+    if (diffInDays < 7) return `${diffInDays}d`;
+
+    const diffInWeeks = Math.floor(diffInDays / 7);
+    return `${diffInWeeks}w`;
+  };
+
   return (
     <div>
       {" "}
@@ -22,17 +41,10 @@ const BlogCard = ({posts}) => {
                   @siddheshumeshsarang
                 </span>
                 <span className="text-[11px] md:text-sm text-secondary font-medium">
-                  {new Date(post.createdAt).toLocaleDateString("en-IN", {
-                    day: "numeric",
-                    month: "numeric",
-                    year: "2-digit",
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
+                  {formatTimeAgo(post.createdAt)} ago
                 </span>
               </div>
 
-          
               <p className="text-xl md:text-3xl font-medium leading-snug text-white/95 whitespace-pre-wrap md:p-4 p-2">
                 {post.title}
               </p>
