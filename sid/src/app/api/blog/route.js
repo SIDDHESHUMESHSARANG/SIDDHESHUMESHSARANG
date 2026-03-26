@@ -18,8 +18,8 @@ export async function GET() {
 export async function POST(req) {
     try {
         await connectDB()
-        const { image, caption } = await req.json()
-        const blog = await Blog.create({ image, caption })
+        const { image, title, caption } = await req.json()
+        const blog = await Blog.create({ image, title, caption })
         return NextResponse.json(blog, { status: 201 })
     } catch (error) {
         return NextResponse.json(
@@ -32,10 +32,10 @@ export async function POST(req) {
 export async function PUT(req) {
     try {
         await connectDB()
-        const { id, image, caption } = await req.json()
-        const blog = await Blog.findByIdAndUpdate(id, { image, caption }, { new: true })
+        const { _id, image, title, caption } = await req.json()
+        const blog = await Blog.findByIdAndUpdate(_id, { image, title, caption }, { new: true })
         return NextResponse.json(blog, { status: 200 })
-    } catch (error) {
+    } catch (error) {   
         return NextResponse.json(
             { error: 'Failed to update blog', details: error.message }, 
             { status: 500 }

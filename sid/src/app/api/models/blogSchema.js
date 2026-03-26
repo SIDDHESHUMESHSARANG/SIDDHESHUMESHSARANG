@@ -4,6 +4,10 @@ const blogSchema = new mongoose.Schema({
     image: { 
         type: String
     },
+    title : {
+        type: String, 
+        required: true
+    },
     caption: { 
         type: String, 
         required: true 
