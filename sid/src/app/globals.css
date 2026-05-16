@@ -1,23 +1,24 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
-    themes: business
+  themes: business
 }
 
 @layer utilities {
   .bg-grid {
     background-size: 60px 80px;
-    background-image: 
+    background-image:
       linear-gradient(to right, rgba(59, 130, 246, 0.50) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(59, 130, 246, 0.50) 1px, transparent 1px);
   }
 
   .bg-grid-lg {
     background-size: 80px 80px;
-    background-image: 
+    background-image:
       linear-gradient(to right, rgba(59, 130, 246, 0.50) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(59, 130, 246, 0.50) 1px, transparent 1px);
   }
-  
+
   /* Adds a fade effect so the grid disappears at the bottom */
   .mask-radial {
     mask-image: radial-gradient(ellipse at center, black, transparent 80%);
@@ -39,9 +40,11 @@ html {
 }
 
 @keyframes fade {
-  from{
+  from {
     opacity: 0;
-  } to {
+  }
+
+  to {
     opacity: 1;
   }
 }

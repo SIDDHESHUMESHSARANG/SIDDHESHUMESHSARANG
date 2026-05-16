@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import RequestModel from '../models/RequestModel.js'
 
 const connection = {}
 

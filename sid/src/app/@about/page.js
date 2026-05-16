@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import {Mail, Github, Instagram, Twitter} from "lucide-react";
+import GpaDarkChart from "@/components/GPAGraph";
 
 const AboutPage = () => {
   const contactEmail =
@@ -11,17 +12,17 @@ const AboutPage = () => {
     {
       label: "Focus",
       value: "Full‑stack apps",
-      hint: "Next.js • APIs • Node JS • Express • Vite • & Many more    ",
-    },
-    {
-      label: "Strengths",
-      value: "Shipping + debugging",
-      hint: "Clean DX, readable code",
+      hint: "Next.js, MongoDB, MERN, APIs, Containerization, Scalability",
     },
     {
       label: "Currently",
       value: "Building & learning",
       hint: "Development, DSA, Machine Learning, Clearing CS Fundamentals",
+    },
+    {
+      label: "Academics",
+      value: "B.Sc. CS",
+      currCGPA: "CGPA: 9  (As of Sem 3)",
     },
   ];
 
@@ -84,7 +85,7 @@ const AboutPage = () => {
             </div>
           </header>
 
-          <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-start">
             {highlights.map((h) => (
               <div
                 key={h.label}
@@ -102,6 +103,17 @@ const AboutPage = () => {
                   <p className="mt-2 text-lg md:text-xl font-semibold">
                     {h.hint}
                   </p>
+                  {h.currCGPA && (
+                    <div>
+                      <p className="mt-2 text-lg md:text-xl font-semibold text-center p-2">
+                        {h.currCGPA}
+                      </p>
+                      <br />
+                      <div>
+                        <GpaDarkChart />
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -167,7 +179,7 @@ const AboutPage = () => {
                   </div>
                   <div className="flex items-center justify-between gap-4">
                     <span className="text-base-content/70">
-                      <Github className="w-4 h-4"/>
+                      <Github className="w-4 h-4" />
                     </span>
                     <span className="font-mono text-xs md:text-sm break-all">
                       SIDDHESHUMESHSARANG

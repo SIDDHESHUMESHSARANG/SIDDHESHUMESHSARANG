@@ -8,18 +8,41 @@ const CertsPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchCerts = async () => {
+    const fetchWithCache = async () => {
       try {
         const baseUrl =
           typeof window !== "undefined" ? window.location.origin : "";
+        const vres = await fetch(`${baseUrl}/api/version`);
+        const vjson = vres.ok ? await vres.json() : { dataVersionID: 0 };
+        const serverVersion = vjson.dataVersionID || 0;
+
+        const localVersion = parseInt(
+          localStorage.getItem("dataVersionID") || "0",
+          10,
+        );
+
+        if (localVersion === serverVersion) {
+          const cached = localStorage.getItem("certsData");
+          if (cached) {
+            setCerts(JSON.parse(cached));
+            setLoading(false);
+            return;
+          }
+        }
+
         const res = await fetch(`${baseUrl}/api/certs`);
         if (!res.ok) {
           console.error("Certs API error status:", res.status);
           throw new Error("Failed to fetch certs");
         }
         const data = await res.json();
-        console.log("Certs API response:", data);
         setCerts(Array.isArray(data) ? data : []);
+
+        localStorage.setItem(
+          "certsData",
+          JSON.stringify(Array.isArray(data) ? data : []),
+        );
+        localStorage.setItem("dataVersionID", String(serverVersion));
       } catch (err) {
         console.error("Error loading certs:", err);
         setError("Could not load certifications.");
@@ -28,7 +51,7 @@ const CertsPage = () => {
       }
     };
 
-    fetchCerts();
+    fetchWithCache();
   }, []);
 
   return (
@@ -49,14 +72,14 @@ const CertsPage = () => {
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
                   Certifications
                 </h2>
-                <p className="text-sm md:text-base text-base-content/70">
+                <p className="text-sm text-secondary mt-1">
                   Proof I don&apos;t just code, I study too.
                 </p>
               </div>
             </div>
             <p className="text-sm md:text-base text-base-content/70 max-w-2xl">
-              Courses, certifications, and achievements that keep me learning and
-              leveling up.
+              Courses, certifications, and achievements that keep me learning
+              and leveling up.
             </p>
             {loading && (
               <p className="text-sm md:text-base text-base-content/60">
@@ -93,4 +116,3 @@ const CertsPage = () => {
 };
 
 export default CertsPage;
-
