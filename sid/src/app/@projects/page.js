@@ -8,31 +8,10 @@ const ProjectsPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchWithCache = async () => {
+    const fetchProjects = async () => {
       try {
         const baseUrl =
           typeof window !== "undefined" ? window.location.origin : "";
-
-        // get server version
-        const vres = await fetch(`${baseUrl}/api/version`);
-        const vjson = vres.ok ? await vres.json() : { dataVersionID: 0 };
-        const serverVersion = vjson.dataVersionID || 0;
-
-        const localVersion = parseInt(
-          localStorage.getItem("dataVersionID") || "0",
-          10,
-        );
-
-        if (localVersion === serverVersion) {
-          const cached = localStorage.getItem("projectsData");
-          if (cached) {
-            setProjects(JSON.parse(cached));
-            setLoading(false);
-            return;
-          }
-        }
-
-        // fall back to fetching fresh data
         const res = await fetch(`${baseUrl}/api/projects`);
         if (!res.ok) {
           console.error("Projects API error status:", res.status);
@@ -40,13 +19,6 @@ const ProjectsPage = () => {
         }
         const data = await res.json();
         setProjects(Array.isArray(data) ? data : []);
-
-        // store fresh copy and version
-        localStorage.setItem(
-          "projectsData",
-          JSON.stringify(Array.isArray(data) ? data : []),
-        );
-        localStorage.setItem("dataVersionID", String(serverVersion));
       } catch (err) {
         console.error("Error loading projects:", err);
         setError("Could not load projects.");
@@ -55,7 +27,7 @@ const ProjectsPage = () => {
       }
     };
 
-    fetchWithCache();
+    fetchProjects();
   }, []);
 
   return (

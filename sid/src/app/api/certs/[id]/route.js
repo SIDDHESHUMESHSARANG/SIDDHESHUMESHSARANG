@@ -1,23 +1,6 @@
 import { NextResponse } from "next/server";
 import connectDB from "../../db/db";
 import Certs from "../../models/certsModel";
-import RequestModel from "../../models/RequestModel";
-import crypto from "crypto";
-
-const bumpVersion = async () => {
-  const salt = process.env.dviSalt || "";
-  const hash = crypto
-    .createHash("sha256")
-    .update(String(Date.now()) + salt)
-    .digest("hex");
-  const numeric = parseInt(hash.slice(0, 12), 16);
-  const dataVersionID = (numeric % 900000) + 100000;
-  await RequestModel.findOneAndUpdate(
-    {},
-    { dataVersionID },
-    { upsert: true, new: true },
-  );
-};
 
 export async function GET(req, { params }) {
   try {
@@ -62,7 +45,6 @@ export async function PUT(req, { params }) {
       return NextResponse.json({ error: "Cert not found" }, { status: 404 });
     }
 
-    await bumpVersion();
     return NextResponse.json(cert, { status: 200 });
   } catch (error) {
     return NextResponse.json(
@@ -79,7 +61,6 @@ export async function DELETE(req, { params }) {
     if (!cert) {
       return NextResponse.json({ error: "Cert not found" }, { status: 404 });
     }
-    await bumpVersion();
     return NextResponse.json(
       { message: "Cert deleted successfully" },
       { status: 200 },

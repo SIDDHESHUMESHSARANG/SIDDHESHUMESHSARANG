@@ -8,28 +8,10 @@ const CertsPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchWithCache = async () => {
+    const fetchCerts = async () => {
       try {
         const baseUrl =
           typeof window !== "undefined" ? window.location.origin : "";
-        const vres = await fetch(`${baseUrl}/api/version`);
-        const vjson = vres.ok ? await vres.json() : { dataVersionID: 0 };
-        const serverVersion = vjson.dataVersionID || 0;
-
-        const localVersion = parseInt(
-          localStorage.getItem("dataVersionID") || "0",
-          10,
-        );
-
-        if (localVersion === serverVersion) {
-          const cached = localStorage.getItem("certsData");
-          if (cached) {
-            setCerts(JSON.parse(cached));
-            setLoading(false);
-            return;
-          }
-        }
-
         const res = await fetch(`${baseUrl}/api/certs`);
         if (!res.ok) {
           console.error("Certs API error status:", res.status);
@@ -37,12 +19,6 @@ const CertsPage = () => {
         }
         const data = await res.json();
         setCerts(Array.isArray(data) ? data : []);
-
-        localStorage.setItem(
-          "certsData",
-          JSON.stringify(Array.isArray(data) ? data : []),
-        );
-        localStorage.setItem("dataVersionID", String(serverVersion));
       } catch (err) {
         console.error("Error loading certs:", err);
         setError("Could not load certifications.");
@@ -51,7 +27,7 @@ const CertsPage = () => {
       }
     };
 
-    fetchWithCache();
+    fetchCerts();
   }, []);
 
   return (

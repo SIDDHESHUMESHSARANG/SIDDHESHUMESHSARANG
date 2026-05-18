@@ -44,12 +44,12 @@ const ProjectCard = ({ project }) => {
               href={githubLink}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-sm md:btn-md btn-outline rounded-2xl"
+              className="btn btn-sm md:btn-md btn-primary rounded-2xl"
             >
-              GitHub
+              GitHub Repository
             </Link>
           )}
-          {liveLink && (
+          {liveLink != "NA" && (
             <Link
               href={liveLink}
               target="_blank"

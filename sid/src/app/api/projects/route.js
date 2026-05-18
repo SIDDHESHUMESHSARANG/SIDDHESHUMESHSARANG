@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import connectDB from "../db/db";
 import Projects from "../models/projectsModel";
-import RequestModel from "../models/RequestModel";
-import crypto from "crypto";
 
 export async function GET() {
   try {
@@ -32,20 +30,6 @@ export async function POST(req) {
       tags,
       tech,
     });
-
-    const salt = process.env.dviSalt || "";
-    const hash = crypto
-      .createHash("sha256")
-      .update(String(Date.now()) + salt)
-      .digest("hex");
-    const numeric = parseInt(hash.slice(0, 12), 16);
-    const dataVersionID = (numeric % 900000) + 100000;
-
-    await RequestModel.findOneAndUpdate(
-      {},
-      { dataVersionID },
-      { upsert: true, new: true },
-    );
 
     return NextResponse.json(project, { status: 201 });
   } catch (error) {
@@ -93,20 +77,6 @@ export async function PUT(req) {
       return NextResponse.json({ error: "Project not found" }, { status: 404 });
     }
 
-    // bump dataVersionID
-    const salt = process.env.dviSalt || "";
-    const hash = crypto
-      .createHash("sha256")
-      .update(String(Date.now()) + salt)
-      .digest("hex");
-    const numeric = parseInt(hash.slice(0, 12), 16);
-    const dataVersionID = (numeric % 900000) + 100000;
-    await RequestModel.findOneAndUpdate(
-      {},
-      { dataVersionID },
-      { upsert: true, new: true },
-    );
-
     return NextResponse.json(project, { status: 200 });
   } catch (error) {
     return NextResponse.json(
@@ -129,20 +99,6 @@ export async function DELETE(req) {
     }
 
     await Projects.findByIdAndDelete(id);
-
-    // bump dataVersionID
-    const salt = process.env.dviSalt || "";
-    const hash = crypto
-      .createHash("sha256")
-      .update(String(Date.now()) + salt)
-      .digest("hex");
-    const numeric = parseInt(hash.slice(0, 12), 16);
-    const dataVersionID = (numeric % 900000) + 100000;
-    await RequestModel.findOneAndUpdate(
-      {},
-      { dataVersionID },
-      { upsert: true, new: true },
-    );
 
     return NextResponse.json(
       { message: "Project deleted successfully" },

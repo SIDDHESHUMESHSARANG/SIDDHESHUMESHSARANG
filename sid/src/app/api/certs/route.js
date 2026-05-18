@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import connectDB from "../db/db";
 import Certs from "../models/certsModel";
-import RequestModel from "../models/RequestModel";
-import crypto from "crypto";
 
 export async function GET() {
   try {
@@ -28,19 +26,6 @@ export async function POST(req) {
       issuedBy,
       grade,
     });
-    // bump dataVersionID
-    const salt = process.env.dviSalt || "";
-    const hash = crypto
-      .createHash("sha256")
-      .update(String(Date.now()) + salt)
-      .digest("hex");
-    const numeric = parseInt(hash.slice(0, 12), 16);
-    const dataVersionID = (numeric % 900000) + 100000;
-    await RequestModel.findOneAndUpdate(
-      {},
-      { dataVersionID },
-      { upsert: true, new: true },
-    );
     return NextResponse.json(cert, { status: 201 });
   } catch (error) {
     return NextResponse.json(
@@ -83,19 +68,6 @@ export async function PUT(req) {
     if (!cert) {
       return NextResponse.json({ error: "Cert not found" }, { status: 404 });
     }
-    // bump dataVersionID
-    const salt = process.env.dviSalt || "";
-    const hash = crypto
-      .createHash("sha256")
-      .update(String(Date.now()) + salt)
-      .digest("hex");
-    const numeric = parseInt(hash.slice(0, 12), 16);
-    const dataVersionID = (numeric % 900000) + 100000;
-    await RequestModel.findOneAndUpdate(
-      {},
-      { dataVersionID },
-      { upsert: true, new: true },
-    );
     return NextResponse.json(cert, { status: 200 });
   } catch (error) {
     return NextResponse.json(
@@ -117,19 +89,6 @@ export async function DELETE(req) {
       );
     }
     await Certs.findByIdAndDelete(id);
-    // bump dataVersionID
-    const salt = process.env.dviSalt || "";
-    const hash = crypto
-      .createHash("sha256")
-      .update(String(Date.now()) + salt)
-      .digest("hex");
-    const numeric = parseInt(hash.slice(0, 12), 16);
-    const dataVersionID = (numeric % 900000) + 100000;
-    await RequestModel.findOneAndUpdate(
-      {},
-      { dataVersionID },
-      { upsert: true, new: true },
-    );
     return NextResponse.json(
       { message: "Cert deleted successfully" },
       { status: 200 },
