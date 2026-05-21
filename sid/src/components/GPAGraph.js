@@ -55,9 +55,9 @@ const GpaDarkChart = () => {
         },
       },
       y: {
-        min: 8.5,
-        max: 9.5,
-        ticks: { color: "#e2e8f0", stepSize: 0.2 },
+        min: 8,
+        max: 10,
+        ticks: { color: "#e2e8f0", stepSize: 0 },
         grid: { color: "rgba(255, 255, 255, 0.1)" },
       },
     },

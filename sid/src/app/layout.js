@@ -3,6 +3,7 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -50,6 +51,8 @@ const RootLayout = ({ children, about, projects, certs }) => {
             <section id="certs">{certs}</section>
           </>
         )}
+
+        <Footer/>
       </body>
     </html>
   );

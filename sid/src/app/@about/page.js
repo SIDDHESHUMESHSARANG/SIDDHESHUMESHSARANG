@@ -111,11 +111,15 @@ const AboutPage = () => {
                       <Link className="link underline-offset-2 text-primary" href="https://www.mu.ac.in/">{h.uniName}</Link>
                       <p className="mt-5 text-lg md:text-xl font-semibold text-center p-2">
                         {h.currCGPA}
-                        <p className="text-sm text-secondary">(As of sem 4)</p>
                       </p>
+                      <p className="text-sm text-secondary text-center">(As of sem 4)</p>
                       <br />
                       <div>
                         <GpaDarkChart />
+                      </div>
+
+                      <div>
+                        <p className="p-2 mt-4">Graduation: May 2027</p>
                       </div>
                     </div>
                   )}
