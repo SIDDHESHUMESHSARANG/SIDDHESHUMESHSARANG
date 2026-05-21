@@ -26,11 +26,11 @@ ChartJS.register(
 
 const GpaDarkChart = () => {
   const data = {
-    labels: ["Sem 1", "Sem 2", "Sem 3"],
+    labels: ["Sem 1", "Sem 2", "Sem 3", "Sem 4"],
     datasets: [
       {
         label: "GPA Score",
-        data: [8.82, 8.91, 9.27],
+        data: [8.82, 8.91, 9.27, 9.36],
         borderColor: "rgb(96, 165, 250)",
         backgroundColor: "rgba(96, 165, 250, 0.2)",
         pointBackgroundColor: "rgb(249, 115, 22)",
