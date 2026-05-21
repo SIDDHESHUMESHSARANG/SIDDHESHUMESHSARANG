@@ -23,7 +23,7 @@ const AboutPage = () => {
       label: "Academics",
       value: "B.Sc. CS",
       course: "B.Sc. Computer Science",
-      currCGPA: "CGPA: 9",
+      currCGPA: "CGPA: 9.09",
       uniName: "University of Mumbai"
     },
   ];
@@ -111,7 +111,7 @@ const AboutPage = () => {
                       <Link className="link underline-offset-2 text-primary" href="https://www.mu.ac.in/">{h.uniName}</Link>
                       <p className="mt-5 text-lg md:text-xl font-semibold text-center p-2">
                         {h.currCGPA}
-                        <p className="text-sm text-secondary">(As of sem 3)</p>
+                        <p className="text-sm text-secondary">(As of sem 4)</p>
                       </p>
                       <br />
                       <div>
