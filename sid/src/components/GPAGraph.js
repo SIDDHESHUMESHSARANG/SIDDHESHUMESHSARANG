@@ -71,6 +71,9 @@ const GpaDarkChart = () => {
         text: "Semester wise Academic Progress",
         color: "#f8fafc",
         font: { size: 14 },
+        padding: {
+         bottom: 20,  
+       },
       },
       // 3. Configure data labels styling
       datalabels: {
