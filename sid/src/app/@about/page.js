@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import {Mail, Github, Instagram, Twitter} from "lucide-react";
-import GpaDarkChart from "@/components/GPAGraph";
 
 const AboutPage = () => {
   const contactEmail =
@@ -18,13 +17,6 @@ const AboutPage = () => {
       label: "Currently",
       value: "Building & learning",
       hint: "Development, DSA, Machine Learning, Clearing CS Fundamentals",
-    },
-    {
-      label: "Academics",
-      value: "B.Sc. CS",
-      course: "B.Sc. Computer Science",
-      currCGPA: "CGPA: 9.09",
-      uniName: "University of Mumbai"
     },
   ];
 
@@ -105,27 +97,6 @@ const AboutPage = () => {
                   <p className="mt-2 text-lg md:text-xl font-semibold">
                     {h.hint}
                   </p>
-                  {h.currCGPA && (
-                    <div>
-                      <p>{h.course}</p>
-                      <Link className="link underline-offset-2 text-primary" href="https://www.mu.ac.in/">{h.uniName}</Link>
-                      <p className="mt-5 text-lg md:text-xl font-semibold text-center p-2">
-                        {h.currCGPA}
-                      </p>
-                      <p className="text-sm text-secondary text-center">(As of sem 4)</p>
-                      <br />
-                      <div>
-                        <GpaDarkChart />
-                      </div>
-
-                      <div>
-                        <p className="p-2 mt-4">Graduation: May 2027</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            ))}
           </section>
 
           <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
