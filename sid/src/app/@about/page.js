@@ -97,6 +97,8 @@ const AboutPage = () => {
                   <p className="mt-2 text-lg md:text-xl font-semibold">
                     {h.hint}
                   </p>
+  								</div> 
+ 							))} 
           </section>
 
           <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
