@@ -29,8 +29,11 @@ const RootLayout = ({ children, about, projects, certs }) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <script src="https://cdn.botpress.cloud"></script>
-        <script src="https://files.bpcontent.cloud" defer></script>
+        <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+        <script
+          src="https://files.bpcontent.cloud/2025/09/24/14/20250924140524-0KFK0RE8.js"
+          defer
+        ></script>
       </head>
 
       <title>Siddhesh Sarang</title>
@@ -52,7 +55,7 @@ const RootLayout = ({ children, about, projects, certs }) => {
           </>
         )}
 
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
