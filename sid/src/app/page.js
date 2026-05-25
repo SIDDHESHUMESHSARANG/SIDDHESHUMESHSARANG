@@ -8,7 +8,11 @@ const Page = () => {
   return (
     <div className="page flex flex-col items-center md:items-start md:p-6 mt-5 md:mt-0 min-h-screen">
       <div className="flex gap-5">
-        <Link href="https://github.com/SIDDHESHUMESHSARANG" target="_blank" className="hidden md:flex">
+        <Link
+          href="https://github.com/SIDDHESHUMESHSARANG"
+          target="_blank"
+          className="hidden md:flex"
+        >
           <div className="flex items-center gap-2 btn bg-primary/10 border border-primary rounded-3xl w-fit px-6 hover:bg-primary">
             <span className="relative flex">
               <Github size={20} />
@@ -25,7 +29,6 @@ const Page = () => {
             Open for Internships & Fresher Roles
           </div>
         </Link>
-
       </div>
       <div className="flex flex-col md:flex-row gap-2 md:mt-38 mt-30 p-4 font-bold text-center md:text-left max-w-xs md:max-w-none self-center">
         <h1 className="text-5xl md:text-7xl tracking-tight ">
@@ -46,8 +49,8 @@ const Page = () => {
         <span className="text-lg">↓</span>
       </div>
       <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 mt-35 md:mt-32 px-4 pb-20">
-        <div className="mockup-window border border-primary/20 bg-base-300 w-full max-w-85 md:max-w-md shadow-2xl rounded-3xl shrink-0 transition-transform hover:scale-[1.02]">
-          <div className="p-4 md:p-6 bg-base-200 rounded-none border-t border-primary/10 text-[11px] md:text-sm h-full">
+        <div className="mockup-window glass-card border border-white/10 w-full max-w-85 md:max-w-md rounded-3xl shrink-0 transition-transform hover:scale-[1.02]">
+          <div className="p-4 md:p-6 bg-slate-950/70 rounded-none border-t border-white/10 text-[11px] md:text-sm h-full">
             <pre data-prefix="$">
               <code> whoami</code>
             </pre>
@@ -87,7 +90,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="rounded-3xl border border-primary/20 p-4 shadow-2xl bg-base-300 flex items-center justify-center w-full max-w-85 md:max-w-md lg:max-w-lg transition-transform hover:scale-[1.02] overflow-hidden">
+        <div className="glass-card rounded-3xl border border-white/10 p-4 flex items-center justify-center w-full max-w-85 md:max-w-md lg:max-w-lg transition-transform hover:scale-[1.02] overflow-hidden">
           <img
             className="w-full h-auto object-contain rounded-2xl"
             src="https://leetcard.jacoblin.cool/sid-08?theme=transparent&font=Poppins&ext=heatmap&border=0"

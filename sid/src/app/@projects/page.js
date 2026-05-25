@@ -6,6 +6,7 @@ const ProjectsPage = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [openAccordionId, setOpenAccordionId] = useState(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -48,7 +49,7 @@ const ProjectsPage = () => {
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
                   Projects
                 </h2>
-                <p className="text-sm text-secondary mt-1">
+                <p className="text-sm mt-1">
                   Things I&apos;ve built – apps, tools and experiments.
                 </p>
               </div>
@@ -79,6 +80,9 @@ const ProjectsPage = () => {
                     <ProjectCard
                       key={project._id || project.id || project.title}
                       project={project}
+                      projectId={project._id || project.id || project.title}
+                      openId={openAccordionId}
+                      onToggle={setOpenAccordionId}
                     />
                   ))}
                 </section>

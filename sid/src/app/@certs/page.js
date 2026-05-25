@@ -48,7 +48,7 @@ const CertsPage = () => {
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
                   Certifications
                 </h2>
-                <p className="text-sm text-secondary mt-1">
+                <p className="text-sm mt-1">
                   Proof I don&apos;t just code, I study too.
                 </p>
               </div>

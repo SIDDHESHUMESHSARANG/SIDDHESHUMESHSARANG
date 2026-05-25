@@ -6,7 +6,7 @@ const CertsCard = ({ cert }) => {
   const { title, status, issuedOn, issuedBy, grade } = cert;
 
   return (
-    <article className="card rounded-3xl border border-primary/20 bg-base-300 shadow-2xl h-full flex flex-col">
+    <article className="glass-card rounded-3xl border border-white/10 shadow-2xl h-full flex flex-col">
       <div className="card-body p-5 md:p-6 flex flex-col gap-4">
         <header className="flex items-start justify-between gap-3">
           <div className="flex-1">
@@ -44,4 +44,3 @@ const CertsCard = ({ cert }) => {
 };
 
 export default CertsCard;
-

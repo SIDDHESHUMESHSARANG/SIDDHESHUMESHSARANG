@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import {Mail, Github, Instagram, Twitter} from "lucide-react";
+import { Mail, Github, Instagram, Twitter } from "lucide-react";
 
 const AboutPage = () => {
   const contactEmail =
     process.env.NEXT_PUBLIC_CONTACT_EMAIL || "siddhesh@example.com";
-  const githubUrl = process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/sid-08";
+  const githubUrl =
+    process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/sid-08";
 
   const highlights = [
     {
@@ -44,7 +45,7 @@ const AboutPage = () => {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-primary/20 bg-base-300 shadow-2xl overflow-hidden">
+            <div className="glass-card rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
               <div className="p-5 md:p-7">
                 <p className="text-base md:text-lg leading-relaxed">
                   Hi, I am Siddhesh Umesh Sarang. I am a passionate software
@@ -83,7 +84,7 @@ const AboutPage = () => {
             {highlights.map((h) => (
               <div
                 key={h.label}
-                className="card rounded-3xl border border-primary/20 bg-base-300 shadow-2xl"
+                className="glass-card rounded-3xl border border-white/10 shadow-2xl"
               >
                 <div className="card-body p-5 md:p-6">
                   <div className="flex items-center justify-between gap-3">
@@ -97,38 +98,38 @@ const AboutPage = () => {
                   <p className="mt-2 text-lg md:text-xl font-semibold">
                     {h.hint}
                   </p>
-  				</div>
-</div>
- ))} 
-</section>
+                </div>
+              </div>
+            ))}
+          </section>
 
           <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
-            <div className="lg:col-span-3 rounded-3xl border border-primary/20 bg-base-300 shadow-2xl">
+            <div className="lg:col-span-3 glass-card rounded-3xl border border-white/10 shadow-2xl">
               <div className="p-5 md:p-7">
                 <h3 className="text-xl md:text-2xl font-bold tracking-tight">
                   What I care about
                 </h3>
                 <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="rounded-2xl bg-base-200 border border-primary/10 p-4">
+                  <div className="glass-card rounded-2xl border border-white/10 p-4">
                     <p className="font-semibold">Clarity over cleverness</p>
                     <p className="text-sm text-base-content/70 mt-1">
                       Readable code, predictable behavior, fewer “surprises”.
                     </p>
                   </div>
-                  <div className="rounded-2xl bg-base-200 border border-primary/10 p-4">
+                  <div className="glass-card rounded-2xl border border-white/10 p-4">
                     <p className="font-semibold">Performance & UX</p>
                     <p className="text-sm text-base-content/70 mt-1">
                       Fast pages, smooth interactions, friendly interfaces.
                     </p>
                   </div>
-                  <div className="rounded-2xl bg-base-200 border border-primary/10 p-4">
+                  <div className="glass-card rounded-2xl border border-white/10 p-4">
                     <p className="font-semibold">Good defaults</p>
                     <p className="text-sm text-base-content/70 mt-1">
                       Sensible design systems, consistent components, good
                       states.
                     </p>
                   </div>
-                  <div className="rounded-2xl bg-base-200 border border-primary/10 p-4">
+                  <div className="glass-card rounded-2xl border border-white/10 p-4">
                     <p className="font-semibold">Learning by building</p>
                     <p className="text-sm text-base-content/70 mt-1">
                       Small experiments that turn into real features.
@@ -138,7 +139,7 @@ const AboutPage = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-2 rounded-3xl border border-primary/20 bg-base-300 shadow-2xl overflow-hidden">
+            <div className="lg:col-span-2 glass-card rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
               <div className="p-5 md:p-7">
                 <h3 className="text-xl md:text-2xl font-bold tracking-tight">
                   Trying to contact me?
@@ -189,7 +190,7 @@ const AboutPage = () => {
             </div>
           </section>
 
-          <section className="rounded-3xl border border-primary/20 bg-base-300 shadow-2xl">
+          <section className="glass-card rounded-3xl border border-white/10 shadow-2xl">
             <div className="p-5 md:p-7 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="flex flex-col gap-1">
                 <h3 className="text-xl md:text-2xl font-bold tracking-tight">

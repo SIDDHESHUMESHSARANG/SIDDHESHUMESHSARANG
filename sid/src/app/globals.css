@@ -1,50 +1,80 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
-@plugin "daisyui" {
-  themes: business
+@plugin "daisyui";
+
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, rgba(34, 211, 238, 0.1), 25%),
+      radial-gradient(circle at 22% 18%, rgba(168, 85, 247, 0.1), transparent 25%),
+      radial-gradient(circle at 78% 18%, rgba(168, 85, 247, 0.1), transparent 25%);
+    color: #e2e8f0;
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background-color: rgba(56, 189, 248, 0.85);
+    color: #0f172a;
+  }
 }
 
 @layer utilities {
-  .bg-grid {
-    background-size: 60px 80px;
-    background-image:
-      linear-gradient(to right, rgba(59, 130, 246, 0.50) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(59, 130, 246, 0.50) 1px, transparent 1px);
-  }
-
-  .bg-grid-lg {
-    background-size: 80px 80px;
-    background-image:
-      linear-gradient(to right, rgba(59, 130, 246, 0.50) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(59, 130, 246, 0.50) 1px, transparent 1px);
-  }
-
-  /* Adds a fade effect so the grid disappears at the bottom */
   .mask-radial {
     mask-image: radial-gradient(ellipse at center, black, transparent 80%);
   }
-}
 
-::selection {
-  background-color: #101010;
-  color: #fff;
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /* Safari support */
+    border-radius: 16px;
+    box-shadow:
+      0 4px 30px rgba(0, 0, 0, 0.4),
+      inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    /* Crisp inner reflection line */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow:
+      0 10px 40px rgba(0, 0, 0, 0.6),
+      inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .hero-glow {
+    filter: drop-shadow(0 0 30px rgba(56, 189, 248, 0.35));
+  }
 }
 
 .page {
   opacity: 0;
-  animation: fade 1s ease-in-out forwards;
-}
-
-html {
-  scroll-behavior: smooth;
+  animation: fade 0.9s ease-in-out forwards;
 }
 
 @keyframes fade {
   from {
     opacity: 0;
+    transform: translateY(8px);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }

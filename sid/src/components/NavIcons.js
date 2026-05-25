@@ -25,31 +25,29 @@ const NavIcons = ({
 
   if (!show || pathname.startsWith("/blog")) return null;
 
+  const itemClass = coloredIcons
+    ? "btn btn-ghost btn-sm rounded-full border border-cyan-500/10 bg-slate-900/70 text-slate-100"
+    : "btn btn-ghost btn-sm rounded-full text-slate-200 hover:bg-slate-800/80";
+
   return (
     <>
-      <nav className="hidden md:flex flex-row gap-6 items-center">
+      <nav className="hidden md:flex flex-row gap-3 items-center">
         <Link href="#about" onClick={(e) => handleClick(e, "#about")}>
-          <button
-            className={`flex items-center gap-2 px-3 py-2 rounded-2xl transition ${coloredIcons ? "btn btn-secondary" : "hover:bg-base-200"}`}
-          >
+          <button className={itemClass}>
             <User2 className="w-4 h-4" />
             <span className="text-sm">About</span>
           </button>
         </Link>
 
         <Link href="#projects" onClick={(e) => handleClick(e, "#projects")}>
-          <button
-            className={`flex items-center gap-2 px-3 py-2 rounded-2xl transition ${coloredIcons ? "btn btn-secondary" : "hover:bg-base-200"}`}
-          >
+          <button className={itemClass}>
             <FolderGit2 className="w-4 h-4" />
             <span className="text-sm">Projects</span>
           </button>
         </Link>
 
         <Link href="#certs" onClick={(e) => handleClick(e, "#certs")}>
-          <button
-            className={`flex items-center gap-2 px-3 py-2 rounded-2xl transition ${coloredIcons ? "btn btn-secondary" : "hover:bg-base-200"}`}
-          >
+          <button className={itemClass}>
             <BadgeCheck className="w-4 h-4" />
             <span className="text-sm">Certs</span>
           </button>
@@ -57,31 +55,37 @@ const NavIcons = ({
       </nav>
 
       {isOpen && (
-        <nav className="md:hidden absolute top-16 left-0 right-0 mx-4 z-30">
-          <div className="rounded-3xl border border-primary/20 bg-base-300 shadow-2xl p-3 flex flex-col gap-2">
+        <nav className="md:hidden absolute top-20 left-4 right-4 z-30">
+          <div className="rounded-3xl border border-white/10 bg-slate-950/95 shadow-2xl shadow-slate-950/40 p-4 backdrop-blur-xl flex flex-col gap-2">
             <Link
               href="#about"
               onClick={(e) => handleClick(e, "#about")}
-              className="w-full flex items-center gap-2 px-3 py-2 rounded-2xl hover:bg-base-200 text-sm"
+              className="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-sm text-slate-100 hover:bg-slate-800/80"
             >
-              <User2 className="w-4 h-4" />
-              <span>About</span>
+              <div className="flex items-center gap-2">
+                <User2 className="w-4 h-4" />
+                <span>About</span>
+              </div>
             </Link>
             <Link
               href="#projects"
               onClick={(e) => handleClick(e, "#projects")}
-              className="w-full flex items-center gap-2 px-3 py-2 rounded-2xl hover:bg-base-200 text-sm"
+              className="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-sm text-slate-100 hover:bg-slate-800/80"
             >
-              <FolderGit2 className="w-4 h-4" />
-              <span>Projects</span>
+              <div className="flex items-center gap-2">
+                <FolderGit2 className="w-4 h-4" />
+                <span>Projects</span>
+              </div>
             </Link>
             <Link
               href="#certs"
               onClick={(e) => handleClick(e, "#certs")}
-              className="w-full flex items-center gap-2 px-3 py-2 rounded-2xl hover:bg-base-200 text-sm"
+              className="w-full rounded-2xl border border-white/10 bg-slate-900/80 px-4 py-3 text-sm text-slate-100 hover:bg-slate-800/80"
             >
-              <BadgeCheck className="w-4 h-4" />
-              <span>Certifications</span>
+              <div className="flex items-center gap-2">
+                <BadgeCheck className="w-4 h-4" />
+                <span>Certifications</span>
+              </div>
             </Link>
           </div>
         </nav>

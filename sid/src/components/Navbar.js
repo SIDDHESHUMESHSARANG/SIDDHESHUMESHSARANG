@@ -15,10 +15,10 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-center md:justify-between px-4 py-5 md:px-6 md:py-6 font-display bg-base-100/90 backdrop-blur border-b border-base-200">
+    <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-center md:justify-between px-4 py-5 md:px-6 md:py-6 font-display  backdrop-blur-md">
       <button
         type="button"
-        className="md:hidden absolute left-4 rotate-270 px-2 py-1 rounded-xl border border-base-300 bg-base-200/70"
+        className="md:hidden absolute left-4 rotate-270 px-2 py-1 rounded-xl border border-base-300 bg-base-200/20"
         onClick={handleToggleMenu}
         aria-label="Toggle navigation"
       >
@@ -31,7 +31,11 @@ const Navbar = () => {
         </h2>
       </Link>
 
-      <NavIcons coloredIcons={false} isOpen={open} onNavigate={handleNavigate} />
+      <NavIcons
+        coloredIcons={false}
+        isOpen={open}
+        onNavigate={handleNavigate}
+      />
     </header>
   );
 };
