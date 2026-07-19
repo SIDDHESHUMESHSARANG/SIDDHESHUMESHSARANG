@@ -31,3 +31,6 @@ Building things that solve problems and spark curiosity.
 <img src="https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white" alt="Vite">
 
 </p>
+<br/>
+
+[![GitHub Stats](https://www.readmecodegen.com/api/github-stats/svg?username=SIDDHESHUMESHSARANG&theme=tokyonight&showProfilePic=false&showBorder=false&followers=false&following=false)](https://www.readmecodegen.com/custom-github-card-generator)
