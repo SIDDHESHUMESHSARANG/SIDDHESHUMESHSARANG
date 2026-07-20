@@ -4,7 +4,7 @@ I'm [Siddhesh Umesh Sarang](https://siddheshumeshsarang.vercel.app)<br />
 Passionate computer science student exploring Computer Science & Development Fundamentals.
 Building things that solve problems and spark curiosity.
 
-
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=500&pause=1000&color=FFFFFF&width=435&lines=Ask+Me+About+;Web+Development+;Backend%2C+Databases+;Machine+Learning+%26+AI;And+many+more..+" alt="Typing SVG" /></a>
 
 ### Tech Stack
 <p align="left">
