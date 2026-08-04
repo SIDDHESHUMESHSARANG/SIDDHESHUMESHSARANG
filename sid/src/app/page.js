@@ -12,7 +12,7 @@ const Page = () => {
           <div className="w-full flex justify-center md:justify-start md:w-auto">
             <HeroFace />
           </div>
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-start md:mt-10">
             <h1 className="text-5xl md:text-7xl tracking-tight">
               Hi! This is{" "}
             </h1>
