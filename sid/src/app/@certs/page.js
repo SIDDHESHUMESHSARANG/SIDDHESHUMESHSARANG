@@ -36,21 +36,11 @@ const CertsPage = () => {
         <div className="flex flex-col gap-6 md:gap-8">
           <header className="flex flex-col gap-4 mb-2">
             <div className="flex items-center gap-3">
-              <div className="avatar">
-                <div className="w-12 rounded-full ring ring-primary/40 ring-offset-base-100 ring-offset-2">
-                  <img
-                    alt="Certifications avatar"
-                    src="https://api.dicebear.com/9.x/identicon/svg?seed=Certifications"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col">
+              
+            <div className="flex flex-col">
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-                  Certifications
+                 / Certifications
                 </h2>
-                <p className="text-sm mt-1">
-                  Proof I don&apos;t just code, I study too.
-                </p>
               </div>
             </div>
             <p className="text-sm md:text-base text-base-content/70 max-w-2xl">

@@ -22,24 +22,16 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="page px-4 md:px-6    pb-20 pt-10 md:pt-14">
+    <div className="page px-4 md:px-6    pb-20 pt-10 md:pt-0">
       <div className="mx-auto w-full max-w-6xl">
         <div className="flex flex-col gap-10">
           <header className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="avatar">
-                <div className="w-12 rounded-full ring ring-primary/40 ring-offset-base-100 ring-offset-2">
-                  <img
-                    alt="Siddhesh Sarang"
-                    src="https://api.dicebear.com/9.x/thumbs/svg?seed=Siddhesh"
-                  />
-                </div>
-              </div>
               <div className="flex flex-col">
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-                  About me
+                  / About me
                 </h2>
-                <p className="text-sm md:text-base text-base-content/70">
+                <p className="text-sm md:text-base text-base-content/70 mt-2">
                   Developer • CS Major • building useful things on the internet
                 </p>
               </div>

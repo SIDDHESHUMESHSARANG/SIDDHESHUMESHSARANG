@@ -37,21 +37,10 @@ const ProjectsPage = () => {
         <div className="flex flex-col gap-6 md:gap-8">
           <header className="flex flex-col gap-4 mb-2">
             <div className="flex items-center gap-3">
-              <div className="avatar">
-                <div className="w-12 rounded-full ring ring-primary/40 ring-offset-base-100 ring-offset-2">
-                  <img
-                    alt="Projects avatar"
-                    src="https://api.dicebear.com/9.x/thumbs/svg?seed=Projects"
-                  />
-                </div>
-              </div>
               <div className="flex flex-col">
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-                  Projects
+                  / Projects
                 </h2>
-                <p className="text-sm mt-1">
-                  Things I&apos;ve built – apps, tools and experiments.
-                </p>
               </div>
             </div>
             <p className="text-sm md:text-base text-base-content/70 max-w-2xl">

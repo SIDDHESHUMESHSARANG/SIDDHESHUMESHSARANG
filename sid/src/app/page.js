@@ -1,100 +1,36 @@
 import React from "react";
 import Link from "next/link";
 import TextType from "@/components/react-bits/Typewriter-reactbits";
-import { Github, GithubIcon, Instagram } from "lucide-react";
+import { Github, TextCursor } from "lucide-react";
+import HeroFace from "@/components/HeroFace";
 
 const Page = () => {
   return (
     <div className="page flex flex-col items-center md:items-start md:p-6 mt-5 md:mt-0 min-h-screen">
-      <div className="flex gap-5">
-        <Link
-          href="https://github.com/SIDDHESHUMESHSARANG"
-          target="_blank"
-          className="hidden md:flex"
-        >
-          <div className="flex items-center gap-2 btn bg-primary/10 border border-primary rounded-3xl w-fit px-6 hover:bg-primary">
-            <span className="relative flex">
-              <Github size={20} />
-            </span>
-            Follow my Github
+      <div className="flex flex-col w-full">
+        <div className="flex flex-col items-center gap-4 md:flex-row md:items-start md:gap-6 md:mt-24 mt-16 p-4 font-bold text-center md:text-left max-w-5xl w-full self-center">
+          <div className="w-full flex justify-center md:justify-start md:w-auto">
+            <HeroFace />
           </div>
-        </Link>
-        <Link href="">
-          <div className="flex items-center gap-2 btn bg-primary/10 border border-primary rounded-3xl w-fit px-6 hover:bg-primary">
-            <span className="relative flex size-3">
-              <span className="status rounded-full status-success animate-ping absolute inline-flex h-full w-full opacity-75"></span>
-              <span className="status rounded-full status-success relative inline-flex size-3"></span>
-            </span>
-            Open for Internships & Fresher Roles
+          <div className="flex flex-col items-center md:items-start">
+            <h1 className="text-5xl md:text-7xl tracking-tight">
+              Hi! This is{" "}
+            </h1>
+            <TextType
+              text={["Siddhesh"]}
+              typingSpeed={100}
+              initialDelay={1000}
+              pauseDuration={1000}
+              showCursor
+              cursorCharacter={"_"}
+              deletingSpeed={100}
+              className="text-5xl md:text-7xl text-primary"
+            />
+            <div className="mt-25 flex flex-col items-center gap-1 text-xs text-base-content/70 animate-bounce">
+              <span>Scroll down</span>
+              <span className="text-lg">↓</span>
+            </div>
           </div>
-        </Link>
-      </div>
-      <div className="flex flex-col md:flex-row gap-2 md:mt-38 mt-30 p-4 font-bold text-center md:text-left max-w-xs md:max-w-none self-center">
-        <h1 className="text-5xl md:text-7xl tracking-tight ">
-          Sometimes i just{" "}
-        </h1>
-        <TextType
-          text={["Code", "Debug", "Solve", "Learn"]}
-          typingSpeed={75}
-          pauseDuration={1500}
-          showCursor
-          cursorCharacter="|"
-          deletingSpeed={50}
-          className="text-5xl md:text-7xl text-primary"
-        />
-      </div>
-      <div className="mt-25 md:hidden self-center flex flex-col items-center gap-1 text-xs text-base-content/70 animate-bounce">
-        <span>Scroll down</span>
-        <span className="text-lg">↓</span>
-      </div>
-      <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 mt-35 md:mt-32 px-4 pb-20">
-        <div className="mockup-window glass-card border border-white/10 w-full max-w-85 md:max-w-md rounded-3xl shrink-0 transition-transform hover:scale-[1.02]">
-          <div className="p-4 md:p-6 bg-slate-950/70 rounded-none border-t border-white/10 text-[11px] md:text-sm h-full">
-            <pre data-prefix="$">
-              <code> whoami</code>
-            </pre>
-            <pre data-prefix=">" className="text-info flex">
-              <code className="whitespace-pre-wrap pl-1">
-                Siddhesh Umesh Sarang <br />
-                <span className="text-base-content/50 text-[10px] md:text-xs">
-                  [Developer, CS Major, a chill guy]
-                </span>
-              </code>
-            </pre>
-
-            <pre data-prefix="$" className="mt-3 md:mt-4">
-              <code> ls skills/</code>
-            </pre>
-            <pre data-prefix=">" className="text-success flex">
-              <code className="text-wrap pl-1 leading-relaxed">
-                next.js mern-stack tailwind daisy-ui python vercel docker git
-                ms-office
-              </code>
-            </pre>
-
-            <pre data-prefix="$" className="mt-3 md:mt-4">
-              <code> cat goals.txt</code>
-            </pre>
-            <pre data-prefix=">" className="text-warning flex">
-              <code className="text-wrap pl-1">
-                Build cool stuff & stop breaking production.
-              </code>
-            </pre>
-
-            <pre data-prefix="$" className="mt-3 md:mt-4 animate-pulse">
-              <code>
-                <span className="bg-primary w-1.5 h-4 md:w-2 md:h-5 inline-block align-middle"></span>
-              </code>
-            </pre>
-          </div>
-        </div>
-
-        <div className="glass-card rounded-3xl border border-white/10 p-4 flex items-center justify-center w-full max-w-85 md:max-w-md lg:max-w-lg transition-transform hover:scale-[1.02] overflow-hidden">
-          <img
-            className="w-full h-auto object-contain rounded-2xl"
-            src="https://leetcard.jacoblin.cool/sid-08?theme=transparent&font=Poppins&ext=heatmap&border=0"
-            alt="LeetCode Stats"
-          />
         </div>
       </div>
     </div>
