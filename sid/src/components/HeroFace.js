@@ -115,7 +115,11 @@ export default function AsciiArt() {
   useEffect(() => {
     // animation loop to distort ascii around mouse
     const step = (t) => {
-      if (frozenRef.current || !baseBrightnessRef.current || !mouseRef.current.inside) {
+      if (
+        frozenRef.current ||
+        !baseBrightnessRef.current ||
+        !mouseRef.current.inside
+      ) {
         rafRef.current = requestAnimationFrame(step);
         return;
       }
